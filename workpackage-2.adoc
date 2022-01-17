@@ -23,7 +23,11 @@ The idea is to set-up experiment and compare the different standards trough diff
 image::image-wp2/workplan.png[]
 
 * setting up a Sensor Observation Service 
+** installed at http://xena.dacd.supsi.ch/istsos/admin/
+** TODO: register sensors and populate with data
 * setting up the Sensor Things API
+** installed at http://xena.dacd.supsi.ch:8080/FROST-Server/
+** TODO: register sensors and populate with data
 * test registering new stations
 * test inserting data
 * test acquire metadata of sensor
