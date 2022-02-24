@@ -20,7 +20,7 @@ In 2022, OGC is launching another pilot, the Climate Change Services Initiative,
 
 The idea is to set-up experiment and compare the different standards trough different implementations to extrapolate practical considerations and advantages and disadvantages of the different OGC standards.
 
-image::image-wp2/workplan.png[]
+image::images/wp2/workplan.png[]
 
 * setting up a Sensor Observation Service 
 ** installed at http://xena.dacd.supsi.ch/istsos/admin/
