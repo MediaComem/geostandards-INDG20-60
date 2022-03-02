@@ -33,7 +33,7 @@ image::images/wp2/workplan.png[]
 * test acquire metadata of sensor
 * test acquire data
 
-==== Questions
+=== Questions
 
 . How modern sensor architecture works?
 . Does the standard fit with the up-to-date approaches?

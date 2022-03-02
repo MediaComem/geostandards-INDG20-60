@@ -1,2 +1,27 @@
 == Work Package 3 (WP3)
-The Work Package 3 (named hereafter WP3) has the intent to evaluate... 
+The Work Package 3 (named hereafter WP3) has the intent to evaluate the current OGC standards related to vector data.
+
+Namely, we'll investigate the:
+
+* https://www.ogc.org/standards/ogcapi-features[OGC-API Features]
+* https://ogcapi.ogc.org/styles/[OGC-API Styles]
+* https://ogcapi.ogc.org/maps/[OGC-API Maps]
+* https://ogcapi.ogc.org/tiles/[OGC-API Tiles]
+* https://ogcapi.ogc.org/records/[OGC-API Records]
+
+=== Motivations
+
+=== Approach
+
+The idea is to set-up, experiment and compare the different standards trough different implementations to extrapolate practical considerations and advantages and disadvantages of the different OGC specifications.
+
+As part of WP3, the following solutions have been investigated:
+ 
+* https://carto.com/[Carto] (JavaScript based implementation)
+* http://geoserver.org/[Geoserver] (Java based implementation)
+* https://pygeoapi.io/[pygeoapi] (python based implementation)
+* https://docs.qgis.org/3.10/fr/docs/user_manual/working_with_ogc/server/index.html[QGIS Server] (C++ based implementation)
+
+=== Questions
+
+
