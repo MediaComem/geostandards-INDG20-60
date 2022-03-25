@@ -23,3 +23,9 @@ include::workpackage-4.adoc[]
 //Conclusion
 
 include::conclusion.adoc[]
+
+//Conference papers
+
+== Conference papers
+
+* link:https://github.com/MediaComem/geostandards-INDG20-60/Presentations/GIS-Normung-international-Spirgartentreffen-2022.pdf[Spiergarten Treffen 2022]
