@@ -23,3 +23,7 @@ include::workpackage-4.adoc[]
 //Conclusion
 
 include::conclusion.adoc[]
+
+//Conference papers
+
+include::conferences.adoc[]

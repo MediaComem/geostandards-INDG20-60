@@ -1,0 +1,3 @@
+== Conferences
+
+* link:https://github.com/MediaComem/geostandards-INDG20-60/blob/main/Presentations/GIS-Normung-international-Spirgartentreffen-2022.pdf[Spiergarten Treffen 2022]
