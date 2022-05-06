@@ -5,7 +5,7 @@
 
 === Interoperability in the field of geoinformation, from eCH to OGC
 
--	the Internet, the web and the keys aspects of interoperability “to climb” the Data, Information, Knowledge, Wisdom (DIKW) Pyramid 
--	interoperability in the Swiss context (NDGI,LGéo, https://ech.ch/index.php/fr/standards/60396[ech0056]eCH-0056, https://www.geocat.admin.ch/fr/documentation/gm03-metadata-model.html[GM03], https://www.interlis.ch/en[INTERLIS])
--	context and interest of the study
--	organization of the OGC (TC, DWG, SWG, OGC-NA, CITE)
+- the Internet, the web and the keys aspects of interoperability “to climb” the Data, Information, Knowledge, Wisdom (DIKW) Pyramid 
+- interoperability in the Swiss context (NDGI,LGéo, https://ech.ch/index.php/fr/standards/60396[eCH-0056], https://www.geocat.admin.ch/fr/documentation/gm03-metadata-model.html[GM03], https://www.interlis.ch/en[INTERLIS])
+- context and interest of the study
+- organization of the OGC (TC, DWG, SWG, OGC-NA, CITE)
