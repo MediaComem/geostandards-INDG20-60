@@ -1,0 +1,35 @@
+=== 31-05-2022
+
+==== Date & Time
+
+31.05.2022 09:00-12:00
+
+==== Attendees
+
+- Frank
+- Maxime
+
+==== Agenda
+
+[cols="1,1,1,1,1"]
+|===
+^.^|Who
+^.^|What
+^.^|Decisions
+^.^|Due Date
+^.^|Statut
+^.^|
+^.^|
+^.^|
+^.^|
+^.^|
+|===
+
+==== Related documents and resources
+
+
+==== Next meeting
+
+20.06.2022
+
+==== Miscellaneous
