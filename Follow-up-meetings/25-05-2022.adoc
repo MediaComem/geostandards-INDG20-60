@@ -1,16 +1,16 @@
 === 25-05-2022
 
-* ==== Date & Time
+==== Date & Time
 
 - 25.05.2022 09:00-10:00
 
-* ==== Attendees
+==== Attendees
 
 - Frank
 - Jens
 - Maxime
 
-* ==== Agenda
+==== Agenda
 
 [cols="1,1,1,1,1"]
 |===
@@ -41,14 +41,14 @@
 ^.^|In Progress
 |===
 
-* ==== Related documents and resources
+==== Related documents and resources
 
 * https://mediacomem.github.io/geostandards-INDG20-60/[Project Documentation]
 * https://ogc.heig-vd.ch/[NGDI-20-60 OGC API Testbed Platform]
 
-* ==== Next meeting
+==== Next meeting
 
-- 31.05.2022
+31.05.2022
 
-* ==== Miscellaneous
+==== Miscellaneous
 Nothing to mention
