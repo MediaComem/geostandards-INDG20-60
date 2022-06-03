@@ -23,22 +23,22 @@
 .^|(Virtual-) meeting organisation
 .^|Meetings will take place every 3 weeks via MS-Teams
 ^.^|31.05.2022
-^.^|Done
+^.^|Done ✅
 ^.^|Frank
 .^|Synchronisation of meeting notes
 .^|Meetings notes will be stored on GitHub
 ^.^|31.05.2022
-^.^|Done
+^.^|Done ✅
 ^.^|Frank
 .^|Valuation of presentation materials, publication etc.
 .^|Presentation materials, publications must be uploaded on GitHub
 ^.^|31.05.2022
-^.^|Done
+^.^|Done ✅
 ^.^|Frank
 .^|Add a link to the TB platform on the project documentation
 .^|Include an ad hoc section in the documentation
 ^.^|20.06.2022
-^.^|In Progress
+^.^|In Progress 🚧
 |===
 
 ==== Related documents and resources
