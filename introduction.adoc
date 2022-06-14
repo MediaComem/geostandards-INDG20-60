@@ -1,13 +1,15 @@
-== Introduction
-// Settings
+// Document settings
 :idprefix:
 :idseparator: -
 [.text-justify]
 :bibtex-file: references.bib
+:bibtex-style: ieee
+
+== Introduction
 
 === Interoperability in the field of geoinformation, from eCH to OGC
 
-Recently, in 2022, the Open Geospatial Consortium (OGC) and the Open Source Geospatial Foundation (OSGeo) have renewed their Memorandum of Understanding. While the initial agree- ment dates from 2008, this renewal is especially motivated by the current focus on the OGC APIs and the will to empower developers (even non-geospatial) to leverage location in their development. Indeed, the OGC has initiated the creation of a new generation of standards based on the OpenAPI specifications to facilitate the integration of geospatial data in modern web applications and systems.
+Recently, in 2022, the Open Geospatial Consortium (OGC) and the Open Source Geospatial Foundation (OSGeo) have renewed their Memorandum of Understanding. While the initial agreement dates from 2008, this renewal is especially motivated by the current focus on the OGC APIs and the will to empower developers (even non-geospatial) to leverage location in their development. Indeed, the OGC has initiated the creation of a new generation of standards based on the OpenAPI specifications to facilitate the integration of geospatial data in modern web applications and systems.
 
 //add ref in bibliography <<pp>>
 
