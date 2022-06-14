@@ -2,6 +2,8 @@
 // Settings
 :idprefix:
 :idseparator: -
+[.text-justify]
+:bibtex-file: references.bib
 
 === Interoperability in the field of geoinformation, from eCH to OGC
 

@@ -1,6 +1,7 @@
 //Document title
 = geostandards-INDG20-60
 :toc: right
+:bibtex-file: references.bib
 
 //Inclusion of the contents of linked files
 

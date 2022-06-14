@@ -1,3 +1,4 @@
+[.text-justify]
 == Work Package 2 (WP2)
 The Work Package 2 (named hereafter WP2) has the intent to evaluate the current OGC standards related to in-situ observations.
 

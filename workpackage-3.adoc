@@ -1,3 +1,4 @@
+[.text-justify]
 == Work Package 3 (WP3)
 
 The Work Package 3 (named hereafter WP3) has the intent to evaluate the current OGC standards related to vector data.
