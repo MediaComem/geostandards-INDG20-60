@@ -43,3 +43,7 @@ include::Follow-up-meetings/03-10-2022.adoc[]
 include::Follow-up-meetings/24-10-2022.adoc[]
 include::Follow-up-meetings/14-11-2022.adoc[]
 include::Follow-up-meetings/05-12-2022.adoc[]
+
+== References
+
+bibliography::[]

@@ -43,7 +43,7 @@ The hydro-meteorological monitoring network of the Canton Ticino (Southern Switz
     Mapping current DB with istSOS keys and prepare script to migrate data.
 **
 
-=== Fisrt test migrate automatic sensors
+=== First test migrate automatic sensors
 
 * migrate data to istSOS: DONE
 * migrate data to FROST: DOING
