@@ -32,8 +32,7 @@ jobs:
         with:
           pdf_build: true
           # asciidoctor_params: --attribute=nofooter
-          # adoc_file_ext: .ascii # default is .adoc
           # source_dir: docs/ # default is .
-          # slides_build: true
+          slides_build: true
           pre_build: asciidoctor -r asciidoctor-bibtex README.adoc
           # post_build:
