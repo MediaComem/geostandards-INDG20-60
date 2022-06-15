@@ -7,12 +7,13 @@ on:
 
 jobs:
   adoc_build:
-    runs-on: ubuntu-latest
     name: Generate AsciiDoc
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        uses: actions/checkout@v2
+      - uses: Ruby setup
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
         with:
           ruby-version: 2.6
       - name: Dependencies
