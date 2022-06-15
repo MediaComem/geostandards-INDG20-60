@@ -27,12 +27,9 @@ jobs:
         run: |
           gem install asciidoctor-bibtex
       # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
-      - name: asciidoctor-ghpages
+      - name: Asciidoctor GitHub Pages
         uses: manoelcampos/asciidoctor-ghpages-action@v2.2.3
         with:
           pdf_build: true
-          # asciidoctor_params: --attribute=nofooter
-          # source_dir: docs/ # default is .
           slides_build: true
-          # pre_build: asciidoctor -r asciidoctor-bibtex README.adoc
           post_build: asciidoctor -r asciidoctor-bibtex README.adoc
