@@ -20,7 +20,7 @@ In 2022, OGC is launching another pilot, the Climate Change Services Initiative,
 
 The idea is to set-up experiment and compare the different standards trough different implementations to extrapolate practical considerations and advantages and disadvantages of the different OGC standards.
 
-image::Images/WP2/workplan.png[]
+image::Images/WP2/workplan.png[align="center"]
 
 ==== Software & standards
 * setting up a Sensor Observation Service using istSOS
@@ -31,7 +31,7 @@ image::Images/WP2/workplan.png[]
 
 ==== Dataset
 
-image::Images/WP2/hydromet_TI.png[]
+image::Images/WP2/hydromet_TI.png[align="center"]
 
 The hydro-meteorological monitoring network of the Canton Ticino (Southern Switzerland), which is currently managed using the SOS standard, has been selected as representative of a practical implementation of basic data required for the climate change impact assessment pipeline. The network, which has a 40 years long time-series, is currently composed of 60 stations and 140 sensors observing precipitation, air temperature and humidity, water temperature, river height. Collected information is operationally used by the local administration to design and actuate water resources protection and allocation to guarantee a sustainable management of the resource and the natural environment while protecting from the impacts of extreme events like floods and droughts. The Sensor Things API operational applicability is evaluated by testing the adopting this standard to fulfill all the major in place daily practical operations like for example data quality management, data sharing with third parties, data collection from vendor specific sensors and data analyses and visualization.
 

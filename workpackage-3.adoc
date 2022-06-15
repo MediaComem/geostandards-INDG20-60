@@ -69,7 +69,7 @@ symbology instructions according to a spreadsheet-based
 modelfootnote:[https://www.bafu.admin.ch/bafu/en/home/state/data/geodata-models/water--geodata-models.html]
 
 .Styling and symbology instructions according to a spreadsheet-based model (from the Area reserved for water MGM)
-image::Images/WP3/mrep-table.png[]
+image::Images/WP3/mrep-table.png[align="center"]
 
 .Geocss styling instructions for Area reserved for water MGM
 =================
@@ -98,7 +98,7 @@ image::Images/WP3/mrep-table.png[]
 =================
 
 .Overview of the Area reserved for water portrayal using the above GeoCSS encoding for GeoServer
-image::Images/WP3/mrep-map.png[]
+image::Images/WP3/mrep-map.png[align="center"]
 
 === First elements to highlight
 
