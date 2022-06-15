@@ -1,0 +1,27 @@
+name: Build AsciiDoc
+
+on:
+  push:
+    branches:
+      - bibtex
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: Generate AsciiDoc
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        id: asciidoc
+        uses: avattathil/asciidoctor-action@master
+        run: |
+          gem install asciidoctor-bibtex
+        with:
+          program: "asciidoctor -D docs --backend=html5 -o index.html -r asciidoctor-bibtex README.adoc"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./docs/
