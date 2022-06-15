@@ -34,5 +34,5 @@ jobs:
           # asciidoctor_params: --attribute=nofooter
           # source_dir: docs/ # default is .
           slides_build: true
-          pre_build: asciidoctor -r asciidoctor-bibtex README.adoc
-          # post_build:
+          # pre_build: asciidoctor -r asciidoctor-bibtex README.adoc
+          post_build: asciidoctor -r asciidoctor-bibtex README.adoc
