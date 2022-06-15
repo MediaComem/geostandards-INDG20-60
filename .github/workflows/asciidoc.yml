@@ -1,4 +1,4 @@
-name: Build AsciiDoc
+name: Build AsciiDoc INDG20-60
 
 on:
   push:
