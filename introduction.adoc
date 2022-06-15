@@ -2,8 +2,11 @@
 :idprefix:
 :idseparator: -
 [.text-justify]
+// Bibtex config: https://github.com/asciidoctor/asciidoctor-bibtex#configuration
 :bibtex-file: references.bib
-:bibtex-style: ieee
+:bibtex-style: apa
+:bibtex-format: asciidoc
+:bibtex-throw: true
 
 == Introduction
 
