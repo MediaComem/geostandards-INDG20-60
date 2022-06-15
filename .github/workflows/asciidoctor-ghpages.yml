@@ -4,9 +4,9 @@ name: asciidoctor-ghpages
 # events but only for the master branch
 on:
   push:
-    branches: [ master, main ]
+    branches: [main]
   pull_request:
-    branches: [ master, main ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -17,11 +17,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
-      
-    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
-    - name: asciidoctor-ghpages
-      uses: manoelcampos/asciidoctor-ghpages-action@v2.2.3
-      with:
-        pdf_build: true
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: Ruby setup
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        with:
+          ruby-version: 2.6
+      - name: Dependencies
+        run: |
+          gem install asciidoctor-bibtex
+      # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
+      - name: Asciidoctor GitHub Pages
+        uses: manoelcampos/asciidoctor-ghpages-action@v2.2.3
+        with:
+          pdf_build: true
+          slides_build: true
+          post_build: asciidoctor -r asciidoctor-bibtex README.adoc

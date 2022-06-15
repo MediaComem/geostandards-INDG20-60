@@ -1,7 +1,11 @@
 //Document title
 = geostandards-INDG20-60
 :toc: right
+// Bibtex config: https://github.com/asciidoctor/asciidoctor-bibtex#configuration
 :bibtex-file: references.bib
+:bibtex-style: apa
+:bibtex-format: asciidoc
+:bibtex-throw: true
 
 //Inclusion of the contents of linked files
 
