@@ -12,11 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Dependencies
+        run: |
+          gem install asciidoctor-bibtex
       - name: Build
         id: asciidoc
         uses: avattathil/asciidoctor-action@master
-        run: |
-          gem install asciidoctor-bibtex
         with:
           program: "asciidoctor -D docs --backend=html5 -o index.html -r asciidoctor-bibtex README.adoc"
       - name: Deploy
