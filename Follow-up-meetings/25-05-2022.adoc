@@ -38,7 +38,7 @@
 .^|Add a link to the TB platform on the project documentation
 .^|Include an ad hoc section in the documentation
 ^.^|20.06.2022
-^.^|In Progress 🚧
+^.^|Done ✅
 |===
 
 ==== Related documents and resources

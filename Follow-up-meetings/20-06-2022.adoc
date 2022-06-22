@@ -6,6 +6,11 @@
 
 ==== Attendees
 
+- Frank
+- Jens
+- Maxime
+- Olivier
+
 ==== Agenda
 
 [cols="1,1,1,1,1"]
@@ -15,14 +20,41 @@
 ^.^|Decisions
 ^.^|Due Date
 ^.^|Statut
-^.^|
-.^|
-.^|
-^.^|
-^.^|
+^.^|Olivier
+.^|Presentation of the FOSS4G publication
+^.^|-
+^.^|-
+^.^|Done ✅
+^.^|Jens
+.^|Discusses that the new OGC standards are shifting focus towards web-applications. This trend potentially creates problems regarding bridges between INTERLIS and new OGC standards
+^.^|Approved
+^.^|Project restitution
+^.^|Not started 💤
+^.^|Jens
+.^|Proposes the build the output in conformity with eCH-structure (e.g. https://www.ech.ch/it/standards/60396)
+^.^|Approved
+^.^|Project restitution
+^.^|Not started 💤
+^.^|Jens
+.^|Proposes to implement APIs in relation to MeteoSwiss data (following Massimiliano's idea)
+^.^|Approved?
+^.^|Future iteration?
+^.^|To be started in a future iteration 💤
+^.^|Frank
+.^|State of play of financial resources
+.^|Complete the financial report
+^.^|24.06.2022
+^.^|In Progress 🚧
+^.^|Frank
+.^|Dissemination of the work in the context of workshops
+.^|Exchange with swisstopo about the organisation of Kolloquium
+^.^|To be discussed at the next meeting
+^.^|Not started 💤
 |===
 
 ==== Related documents and resources
+
+* https://talks.osgeo.org/media/foss4g-2022-academic-track/submissions/GBPPCM/resources/OGC_API_State_of_Play-VF-oez_PM9KXw4.pdf[FOSS4G article]
 
 ==== Next meeting
 
