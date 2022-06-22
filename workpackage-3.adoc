@@ -65,8 +65,8 @@ maps using the new OGC APIs cite:[ogc-api]
 published by the Swiss Government as Minimal Geodata
 Models (MGM) cite:[mgm] using the Swiss INTERLIS modeling language. It
 is also mandatory for these models to provide styling and
-symbology instructions according to a spreadsheet-based
-modelfootnote:[https://www.bafu.admin.ch/bafu/en/home/state/data/geodata-models/water--geodata-models.html]
+symbology instructions according to a https://www.bafu.admin.ch/bafu/en/home/state/data/geodata-models/water--geodata-models.html[spreadsheet-based
+model]
 
 .Styling and symbology instructions according to a spreadsheet-based model (from the Area reserved for water MGM)
 image::Images/WP3/mrep-table.png[align="center"]
@@ -76,7 +76,7 @@ image::Images/WP3/mrep-table.png[align="center"]
 [source,css]
 ----
 /* Metadata
-* @title GeoCSS encoding for Geoserver
+* @title GeoCSS encoding for GeoServer
 * @abstract Representation model
 */
 /* Main rule*/
