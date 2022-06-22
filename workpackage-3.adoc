@@ -120,7 +120,7 @@ raster) to be computed. This way of defining tiles assures on the
 one hand the compatibility with existing WMTS services (i.e.
 allowing applications to easily integrate both existing WMTS
 layers with tiled vector layers), but also with the Mapbox Vector
-tiles specification. On the software side Geoserver already
+tiles specification. On the software side GeoServer already
 supports the OGC-API tiles specification rendering the formats
 jpg, png, GeoJSON, topojson and mapbox-vector-tile.
 
