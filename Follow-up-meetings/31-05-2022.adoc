@@ -11,36 +11,26 @@
 
 ==== Agenda
 
-[cols="1,1,1,1,1"]
+[cols="1,1,1"]
 |===
 ^.^|Who
 ^.^|What
-^.^|Decisions
-^.^|Due Date
-^.^|Statut
+^.^|Comments
 ^.^|Frank
 .^|Prepare templates for meeting notes on GitHub
-^.^|Approved
-^.^|20.06.2022
 ^.^|Done ✅
 ^.^|Frank
-.^|Feed the documentation and the test platform (Howto’s, WP’s Results)
-.^|Will be made as soon as the FOSS4G publication is submitted
-^.^|20.06.2022
-^.^|Not started 💤
+.^|Feed the documentation and the testbed platform (Howto’s, WP’s Results)
+.^|To be carried out throughout the project
 ^.^|Frank
 .^|Depict the CH Standards Landscape - presentation of the situation as it is
-.^|Will be carried out in the context with the FOSS4G publication
-^.^|20.06.2022
-^.^|In progress 🚧
+^.^|Done ✅
 ^.^|Frank
 .^a|Make a decision matrix for the choice of standards (OGC, eCH). Typical questions & critical factors are:
 
 * When is a standard interesting / ready to be standardized in Switzerland as well? 
 * Groundtruthing/verification (Interviews with e-CH / users etc.)
-.^|To be carried out in addition to the FOSS4G publication
-^.^|20.06.2022
-^.^|In progress 🚧
+.^|To be carried out throughout the project
 |===
 
 ==== Related documents and resources

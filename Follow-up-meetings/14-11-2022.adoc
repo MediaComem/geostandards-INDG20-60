@@ -8,18 +8,14 @@
 
 ==== Agenda
 
-[cols="1,1,1,1,1"]
+[cols="1,1,1"]
 |===
 ^.^|Who
 ^.^|What
-^.^|Decisions
-^.^|Due Date
-^.^|Statut
+^.^|Comments
 ^.^|
 .^|
 .^|
-^.^|
-^.^|
 |===
 
 ==== Related documents and resources

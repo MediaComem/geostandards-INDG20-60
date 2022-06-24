@@ -12,32 +12,22 @@
 
 ==== Agenda
 
-[cols="1,1,1,1,1"]
+[cols="1,1,1"]
 |===
 ^.^|Who
 ^.^|What
-^.^|Decisions
-^.^|Due Date
-^.^|Statut
+^.^|Comments
 ^.^|Frank
-.^|(Virtual-) meeting organisation
-.^|Meetings will take place every 3 weeks via MS-Teams
-^.^|31.05.2022
+.^|Plan MS-Teams meetings every 3 weeks
 ^.^|Done ✅
 ^.^|Frank
-.^|Synchronisation of meeting notes
-.^|Meetings notes will be stored on GitHub
-^.^|31.05.2022
+.^|Synchronisation of meeting notes on GitHub
 ^.^|Done ✅
 ^.^|Frank
-.^|Valuation of presentation materials, publication etc.
-.^|Presentation materials, publications must be uploaded on GitHub
-^.^|31.05.2022
+.^|Valuation of presentation materials, publication etc. on GitHub
 ^.^|Done ✅
 ^.^|Frank
-.^|Add a link to the TB platform on the project documentation
-.^|Include an ad hoc section in the documentation
-^.^|20.06.2022
+.^|Add a link to the TB platform on the project documentation an ad hoc section in the documentation
 ^.^|Done ✅
 |===
 
