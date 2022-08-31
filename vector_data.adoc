@@ -1,0 +1,6 @@
+[.text-justify]
+== Vector data
+=== OGC API Features
+==== Description
+==== Current version 
+==== Mapping of metadata elements
