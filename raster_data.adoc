@@ -1,0 +1,14 @@
+[.text-justify]
+== Raster data
+=== OGC API Maps
+==== Description
+==== Current version 
+==== Mapping of metadata elements
+=== OGC API Coverages
+==== Description
+==== Current version 
+==== Mapping of metadata elements
+=== OGC API EDR
+==== Description
+==== Current version 
+==== Mapping of metadata elements
