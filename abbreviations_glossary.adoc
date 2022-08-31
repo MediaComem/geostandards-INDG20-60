@@ -1,0 +1,2 @@
+[.text-justify]
+== Appendix C: abbreviations and glossary
