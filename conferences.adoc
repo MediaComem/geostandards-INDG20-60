@@ -1,4 +1,4 @@
-== Conferences
+== Appendix D: conference papers
 
 * link:https://github.com/MediaComem/geostandards-INDG20-60/blob/main/Presentations/GIS-Normung-international-Spirgartentreffen-2022.pdf[Spiergarten Treffen 2022]
 * link:https://talks.osgeo.org/media/foss4g-2022-academic-track/submissions/GBPPCM/resources/OGC_API_State_of_Play-VF-oez2_f8w5f9E.pdf[FOSS4G 2022]
