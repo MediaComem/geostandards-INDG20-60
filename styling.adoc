@@ -1,0 +1,6 @@
+[.text-justify]
+== Styling
+=== OGC API Styles
+==== Description
+==== Current version 
+==== Mapping of metadata elements
