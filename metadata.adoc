@@ -1,0 +1,11 @@
+[.text-justify]
+== Metadata
+=== GM03
+=== STAC
+==== Description
+==== Current version 
+==== Mapping of metadata elements
+=== OGC API Records
+==== Description
+==== Current version 
+==== Mapping of metadata elements
