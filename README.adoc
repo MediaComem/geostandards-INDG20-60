@@ -9,33 +9,83 @@
 
 //Inclusion of the contents of linked files
 
+//Summary
+
+include::summary.adoc[]
+
 //Introduction
 
 include::introduction.adoc[]
 
-//Workpackage 2
+//Concepts and definitions
 
-include::workpackage-2.adoc[]
+include::concepts_definitions.adoc[]
 
-//Workpackage 3
+//Legal aspects
 
-include::workpackage-3.adoc[]
+include::legal_aspects.adoc[]
 
-//Workpackage 4
+//Vector data
 
-include::workpackage-4.adoc[]
+include::vector_data.adoc[]
+
+//Raster data
+
+include::raster_data.adoc[]
+
+//Tiles
+
+include::tiles.adoc[]
+
+//Metadata
+
+include::metadata.adoc[]
+
+//Styling
+
+include::styling.adoc[]
+
+//Process
+
+include::processes.adoc[]
+
+//Measurement and operation services
+
+include::measurement_operation_services.adoc[]
+
+//Positioning services
+
+include::positioning_services.adoc[]
+
+//Other standards of interest
+
+include::other_standards_of_interest.adoc[]
 
 //Conclusion
 
 include::conclusion.adoc[]
 
-//Conference papers
+//Appendix A: bibliographical references
+
+== Appendix A: bibliographical references
+
+bibliography::[]
+
+//Appendix B: collaboration and verification 
+
+include::collaboration_verification.adoc[]
+
+//Appendix C: abbreviations and glossary
+
+include::abbreviations_glossary.adoc[]
+
+//Appendix D: conference papers
 
 include::conferences.adoc[]
 
-//Follow up meetings
+//Appendix E: follow up meetings
 
-== Follow up meetings
+== Appendix E: follow up meetings
 
 include::Follow-up-meetings/25-05-2022.adoc[]
 include::Follow-up-meetings/31-05-2022.adoc[]
@@ -48,7 +98,3 @@ include::Follow-up-meetings/03-10-2022.adoc[]
 include::Follow-up-meetings/24-10-2022.adoc[]
 include::Follow-up-meetings/14-11-2022.adoc[]
 include::Follow-up-meetings/05-12-2022.adoc[]
-
-== References
-
-bibliography::[]
