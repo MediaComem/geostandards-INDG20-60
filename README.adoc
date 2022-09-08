@@ -17,17 +17,9 @@ include::summary.adoc[]
 
 include::introduction.adoc[]
 
-//Concepts and definitions
+//Data access
 
-include::concepts_definitions.adoc[]
-
-//Legal aspects
-
-include::legal_aspects.adoc[]
-
-//Vector data
-
-include::vector_data.adoc[]
+include::data_access.adoc[]
 
 //Raster data
 
