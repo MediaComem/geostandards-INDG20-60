@@ -108,10 +108,10 @@ NGDI-20-60 OGC API Testbed Platform]
 |Resource |Path |HTTP method |Document reference
 |Landing page |`/` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_api_landing_page[7.2 API landing page]
 |Conformance declaration |`/conformance` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_declaration_of_conformance_classes[7.4 Declaration of conformance classes]
-|Feature collections |`/collections` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collections_[7.13 Feature collections]
-|Feature collection |`/collections/{collectionId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collection_[7.14 Feature collection]
-|Features |`/collections/{collectionId}/items` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_items_[7.15 Features]
-|Feature |`/collections/{collectionId}/items/{featureId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_feature_[7.16 Feature]
+|Feature collections |`/collections` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collections$$_$$[7.13 Feature collections]
+|Feature collection |`/collections/{collectionId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collection$$_$$[7.14 Feature collection]
+|Features |`/collections/{collectionId}/items` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_items$$_$$[7.15 Features]
+|Feature |`/collections/{collectionId}/items/{featureId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_feature$$_$$[7.16 Feature]
 !===
 
 ==== 2.4 Relation to other OGC Standards
