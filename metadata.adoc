@@ -36,8 +36,3 @@
 ==== 3.4 Relation to other OGC Standards
 ==== 3.5 Relation with eCH-0056
 ==== 3.6 Proposed modifications to eCH-0056
-
-
-
-
-
