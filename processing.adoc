@@ -1,0 +1,26 @@
+[.text-justify]
+== Processing Standards
+
+=== 1. Web Processing Service (WPS)
+==== 1.1 Introduction
+==== 1.2 Background
+===== 1.2.1 History
+===== 1.2.2 Versions
+===== 1.2.3 Implementations
+===== 1.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== 1.3 Operations
+==== 1.4 Relation to other OGC Standards
+==== 1.5 Relation with eCH-0056
+==== 1.6 Proposed modifications to eCH-0056
+
+=== 2. OGC API - Processes
+==== 2.1 Introduction
+==== 2.2 Background
+===== 2.2.1 History
+===== 2.2.2 Versions
+===== 2.2.3 Implementations
+===== 2.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== 2.3 Operations
+==== 2.4 Relation to other OGC Standards
+==== 2.5 Relation with eCH-0056
+==== 2.6 Proposed modifications to eCH-0056
