@@ -56,7 +56,7 @@ NOTE:  compile a summary of the major differences between the 2 standards
 
 The WFS standard is currently mentioned in the following sections:
 
-3.4, 6.4, 6.6 (`QUAL-03`), 6.9, 6.9.2 (`WFS-01`,`WFS-02`,`WFS-03`,`WFS-04`,`WFS-05`,`WFS-06`,`WFS-07`,`WFS-08`,`WFS-09`,`WFS-10`,`WFS-11`,`WFS-12`), 6.11, appendix B (`Mapping: WFS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+3.4, 5, 6.4, 6.6 (`QUAL-03`), 6.9, 6.9.2 (`WFS-01`,`WFS-02`,`WFS-03`,`WFS-04`,`WFS-05`,`WFS-06`,`WFS-07`,`WFS-08`,`WFS-09`,`WFS-10`,`WFS-11`,`WFS-12`), 6.11, appendix B (`Mapping: WFS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
 
 of the eCH-0056 document.
 
@@ -149,9 +149,16 @@ The Web Coverage Service (WCS) standard has not been integrated into the Testbed
 NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== 3.5 Relation with eCH-0056
+
+The Web Coverage Service (WCS) standard is currently mentioned in the following sections:
+
+5, 6.4, 6.9, 6.9.3 (`WCS-01`,`WCS-02`,`WCS-03`,`WCS-04`,`WCS-05`,`WCS-06`), appendix A (`Mapping: WCS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
 ==== 3.6 Proposed modifications to eCH-0056
 
-=== 4. OGC API - Environmental Data Retrieval
+=== 4. OGC API - Environmental Data Retrieval (EDR)
 
 ==== 4.1 Introduction
 ==== 4.2 Background
@@ -166,6 +173,38 @@ NGDI-20-60 OGC API Testbed Platform]
 NOTE: update the link once the structure of the Testbed Platform adapted. 
 
 ==== 4.3 Operations, Resources
+
+<<edr-paths>> summarizes the access paths and relation types defined in this standard.
+
+[#edr-paths,reftext='{table-caption} {counter:table-num}']
+.Environmental Data Retrieval API Paths
+[width="90%",cols="3,2,5",options="header"]
+|===
+^|**Path Template** ^|**Relation** ^|**Resource**
+3+^|**Common**
+|<<landing-page,{root}/>> |none |Landing page
+|<<api-definition,{root}/api>> |`service-desc` +
+or +
+`service-doc` |API Description (optional)
+|<<conformance-classes,{root}/conformance>> |`conformance` |Conformance Classes
+3+^|**Collections**
+|<<collection-information-queries,{root}/collections>> |`data` |Metadata describing the <<collection-definition,collections>> of data available from this API.
+|<<collection-information-queries,{root}/collections/{collectionId}>> | |Metadata describing the <<collection-definition,collection>> of data which has the unique identifier `{collectionId}`
+3+^|**Features**
+|<<collection-information-queries,{root}/collections/{collectionId}/items>>|`items`|Retrieve metadata about available items
+3+^|**Queries**
+|<<collection-information-queries,{root}/collections/{collectionId}/{queryType}>>| |Retrieve data according to the query pattern
+|<<collection-information-queries,{root}/collections/{collectionId}/instances>>| |Retrieve metadata about <<instance-definition,instances>> of a <<collection-definition,collection>>
+|<<collection-information-queries,{root}/collections/{collectionId}/instances/{instanceId}>>| |Retrieve metadata from a specific <<instance-definition,instance>> of a <<collection-definition,collection>> which has the unique identifier `{instanceId}`
+|===
+
+Where:
+
+* `{root}` = Base URI for the API server
+* `{collectionId}` = an identifier for a specific <<collection-definition,collection>> of data
+* `{instanceId}` = an identifier for a specific version or <<instance-definition,instance>> of a <<collection-definition,collection>> of data
+* `{queryType}` = an identifier for a specific query pattern to retrieve data from a specific <<collection-definition,collection>> of data
+
 ==== 4.4 Relation to other OGC Standards
 
 - <<3. Web Coverage Service (WCS)>>
@@ -173,7 +212,14 @@ NOTE: update the link once the structure of the Testbed Platform adapted.
 NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== 4.5 Relation with eCH-0056
+
+The OGC API - Environmental Data Retrieval standard is not mentioned in the eCH-0056 document.
+
 ==== 4.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC API EDR in the same sections as the WCS standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC API EDR standard.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API EDR.
 
 === 5. Sensor Observation Service (SOS)
 
@@ -194,9 +240,17 @@ The Sensor Observation Service (SOS) standard has not been integrated into the T
 NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== 5.5 Relation with eCH-0056
+
+
+The Sensor Observation Service (SOS) standard is currently mentioned in the following sections:
+
+5, 6.14 and the appendix E
+
+of the eCH-0056 document.
+
 ==== 5.6 Proposed modifications to eCH-0056
 
-=== 6. SensorThings API
+=== 6. OGC SensorThings API
 ==== 6.1 Introduction
 ==== 6.2 Background
 ===== 6.2.1 History
@@ -215,4 +269,11 @@ NGDI-20-60 OGC API Testbed Platform]
 NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== 6.5 Relation with eCH-0056
+
+The OGC SensorThings API standard is not mentioned in the eCH-0056 document.
+
 ==== 6.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC SensorThings API in the same sections as the Sensor Observation Service (SOS) standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC SensorThings API.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC SensorThings API.
