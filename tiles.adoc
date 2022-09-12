@@ -1,7 +1,0 @@
-[.text-justify]
-== Tiles
-=== OGC API Tiles
-==== Description
-==== Current version 
-==== Mapping of metadata elements
-==== Tiling schema
