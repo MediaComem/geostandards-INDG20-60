@@ -1,6 +1,0 @@
-[.text-justify]
-== Processes
-=== OGC API Processes
-==== Description
-==== Current version 
-==== Mapping of metadata elements
