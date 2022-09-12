@@ -1,6 +1,0 @@
-[.text-justify]
-== Measurement and operation services
-=== OGC SensorThings API
-==== Description
-==== Current version 
-==== Mapping of metadata elements
