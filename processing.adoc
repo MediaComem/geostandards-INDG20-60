@@ -7,10 +7,24 @@
 ===== 1.2.1 History
 ===== 1.2.2 Versions
 ===== 1.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
 ===== 1.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Processing Service (WPS) standard has not been integrated into the Testbed platform.
+
 ==== 1.3 Operations
 ==== 1.4 Relation to other OGC Standards
+
+- <<2. OGC API - Processes>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
 ==== 1.5 Relation with eCH-0056
+
+The Web Processing Service (WPS) standard is not mentioned in the eCH-0056 document.
+
 ==== 1.6 Proposed modifications to eCH-0056
 
 === 2. OGC API - Processes
@@ -19,8 +33,29 @@
 ===== 2.2.1 History
 ===== 2.2.2 Versions
 ===== 2.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
 ===== 2.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/pygeoapi/processes?f=html[
+NGDI-20-60 OGC API Testbed Platform]
+
+NOTE: update the link once the structure of the Testbed Platform adapted.
+
 ==== 2.3 Operations
 ==== 2.4 Relation to other OGC Standards
+
+- <<1. Web Processing Service (WPS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
 ==== 2.5 Relation with eCH-0056
+
+The OGC API - Processes standard is not mentioned in the eCH-0056 document.
+
 ==== 2.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC API - Processes in the same sections as the WPS standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC API - Processes.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API - Processes.
