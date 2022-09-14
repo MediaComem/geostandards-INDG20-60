@@ -21,37 +21,31 @@ include::introduction.adoc[]
 
 include::data_access.adoc[]
 
-//Raster data
+//Processing standards
 
-include::raster_data.adoc[]
+include::processing.adoc[]
 
-//Tiles
+//Visualisation standards
 
-include::tiles.adoc[]
+include::visualization.adoc[]
 
-//Metadata
+//Metadata & Catalogue Services
 
 include::metadata.adoc[]
 
-//Styling
+//Other topics (to be confirmed)
 
-include::styling.adoc[]
+// //Measurement and operation services
 
-//Process
+// include::measurement_operation_services.adoc[]
 
-include::processes.adoc[]
+// //Positioning services
 
-//Measurement and operation services
+// include::positioning_services.adoc[]
 
-include::measurement_operation_services.adoc[]
+// //Other standards of interest
 
-//Positioning services
-
-include::positioning_services.adoc[]
-
-//Other standards of interest
-
-include::other_standards_of_interest.adoc[]
+// include::other_standards_of_interest.adoc[]
 
 //Conclusion
 
