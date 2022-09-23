@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== From OWS to web architecture
+
+=== OWS Common
+
+=== OGC API Common
+
