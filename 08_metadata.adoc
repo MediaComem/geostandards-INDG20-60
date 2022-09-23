@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== Metadata & Catalogue Services Standards
+
+=== Introduction
+=== History
+=== Operations, Ressources
+=== Discussion
