@@ -1,0 +1,5 @@
+// Document settings
+[.text-justify]
+
+== Methodology
+
