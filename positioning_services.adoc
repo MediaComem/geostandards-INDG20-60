@@ -1,6 +1,0 @@
-[.text-justify]
-== Positioning services
-=== Geopose
-==== Description
-==== Current version 
-==== Mapping of metadata elements

@@ -11,27 +11,47 @@
 
 //Summary
 
-include::summary.adoc[]
+include::00_summary.adoc[]
 
 //Introduction
 
-include::introduction.adoc[]
+include::01_introduction.adoc[]
 
-//Data access
+//Methodology
 
-include::data_access.adoc[]
+include::02_methodology.adoc[]
+
+//Architecture
+
+include::03_architecture.adoc[]
+
+//Data Encoding Standards
+
+include::04_data_encoding.adoc[]
+
+//Data Access Standards
+
+include::05_data_access.adoc[]
 
 //Processing standards
 
-include::processing.adoc[]
+include::06_processing.adoc[]
 
 //Visualisation standards
 
-include::visualization.adoc[]
+include::07_visualization.adoc[]
 
 //Metadata & Catalogue Services
 
-include::metadata.adoc[]
+include::08_metadata.adoc[]
+
+// Uses cases
+
+include::09_uses_cases.adoc[]
+
+// Conclusion
+
+include::10_conclusion.adoc[]
 
 //Other topics (to be confirmed)
 
@@ -47,10 +67,6 @@ include::metadata.adoc[]
 
 // include::other_standards_of_interest.adoc[]
 
-//Conclusion
-
-include::conclusion.adoc[]
-
 //Appendix A: bibliographical references
 
 == Appendix A: bibliographical references
@@ -59,11 +75,11 @@ bibliography::[]
 
 //Appendix B: collaboration and verification 
 
-include::collaboration_verification.adoc[]
+//include::collaboration_verification.adoc[]
 
 //Appendix C: abbreviations and glossary
 
-include::abbreviations_glossary.adoc[]
+//include::abbreviations_glossary.adoc[]
 
 //Appendix D: conference papers
 
