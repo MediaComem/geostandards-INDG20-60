@@ -1,0 +1,7 @@
+[.text-justify]
+== General rules, basic requirements
+=== Date & Time
+=== Security
+=== Language
+=== Coordinate Reference systems
+=== LinkedData

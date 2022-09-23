@@ -1,0 +1,104 @@
+[.text-justify]
+== Metadata and Catalogue Services Standards
+
+=== 1. Catalogue Services for the Web (CSW)
+==== 1.1 Introduction
+
+Catalogue services support the ability to publish and search collections of descriptive information (metadata) for data, services, and related information objects. Metadata in catalogues represent can be queried and presented for evaluation and further processing by both humans and software. Catalogue services are required to support the discovery and binding to registered information resources within an information community.
+
+==== 1.2 Background
+===== 1.2.1 History
+
+- http://docs.opengeospatial.org/is/12-168r6/12-168r6.html[OGC® Catalogue Services 3.0 - General Model], http://docs.opengeospatial.org/is/12-176r7/12-176r7.html[OGC® Catalogue Services 3.0 Specification - HTTP Protocol Binding], http://docs.opengeospatial.org/is/14-014r3/14-014r3.html[OGC® Catalogue Services 3.0 Specification - HTTP Protocol Binding - Abstract Test Suite] were released in February 2016.
+
+NOTE: propose an update of the https://opengeospatial.github.io/e-learning/cat/text/main.html#introduction[documentation] to the OGC.
+
+===== 1.2.2 Versions
+
+CSW 3.0 is the current latest version
+
+===== 1.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== 1.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Map Tile Service (WMTS) standard has not been integrated into the Testbed platform.
+
+==== 1.3 Operations
+
+The Catalogue Services for the Web (CSW) standard has not been integrated into the Testbed platform.
+
+==== 1.4 Relation to other OGC Standards
+
+- <<2. OGC API - Records>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 1.5 Relation with eCH-0056
+
+The Catalogue Services for the Web (CSW) standard is currently mentioned in the following sections:
+
+3.4, 5, 6.10 (`CSW-01`,`CSW-02`,`CSW-03`), 6.11, appendix A (`Mapping: CSW metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
+==== 1.6 Proposed modifications to eCH-0056
+
+=== 2. OGC API - Records
+==== 2.1 Introduction
+==== 2.2 Background
+===== 2.2.1 History
+===== 2.2.2 Versions
+===== 2.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== 2.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-records[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== 2.3 Operations
+==== 2.4 Relation to other OGC Standards
+
+- <<1. Catalogue Services for the Web (CSW)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 2.5 Relation with eCH-0056
+
+The OGC API - Records standard is not mentioned in the eCH-0056 document.
+
+==== 2.6 Proposed modifications to eCH-0056
+
+=== 3. Spatio Temporal Asset Catalog (STAC)
+==== 3.1 Introduction
+==== 3.2 Background
+===== 3.2.1 History
+===== 3.2.2 Versions
+===== 3.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== 3.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-records[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== 3.3 Operations
+==== 3.4 Relation to other OGC Standards
+
+- <<1. Catalogue Services for the Web (CSW)>>
+- <<2. OGC API - Records>>
+- <<OGC API - Features>>
+
+NOTE:  compile a summary of the major differences between the 3 standards
+
+NOTE:  edit the link to the OGC API - Features standard
+
+==== 3.5 Relation with eCH-0056
+
+The Spatio Temporal Asset Catalog (STAC) is not mentioned in the eCH-0056 document.
+
+==== 3.6 Proposed modifications to eCH-0056

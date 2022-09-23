@@ -1,0 +1,279 @@
+[.text-justify]
+== Data Access Standards
+
+=== 1. Web Feature Service (WFS)
+
+==== 1.1 Introduction
+
+The OGC Web Feature Service (WFS) Interface Standard defines a set of interfaces for accessing geographic information at the feature and feature property level over the Internet. A feature is an abstraction of real world phenomena, that is it is a representation of anything that can be found in the world. The attributes or characteristics of a geographic feature are referred to as feature properties. WFS offer the means to retrieve or query geographic features in a manner independent of the underlying data stores they publish. Where a WFS is authorized to do so, the service can also update or delete geographic features. An instance of a WFS is also able to store queries in order to enable client applications to retrieve or execute the queries at a later point in time.
+
+Source : https://opengeospatial.github.io/e-learning/wfs/text/basic-main.html[Open Geospatial Consortium]
+
+==== 1.2 Background
+
+===== 1.2.1 History
+
+WFS version 1.0.0 in May 2002, followed by version 1.1.0 in May 2005,and version 2.0.0 in November 2010. Version 2.0.0 is the basis of ISO 19142. The OGC released WFS version 2.0.2 in July 2014.
+
+===== 1.2.2 Versions
+
+2.0.2 is the current latest version
+
+===== 1.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== 1.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Feature Service (WFS) standard has not been integrated into the Testbed platform.
+
+==== 1.3 Operations, Resources
+
+.Overview of the WFS operations
+[cols="1,1"]
+|===
+*Operation* | *Description*
+| `GetCapabilities` | Retrieves metadata about the service, including supported operations and parameters, and a list of the available feature types.
+| `DescribeFeatureType` | Returns a description of the structure of feature types and feature properties offered or accepted by an instance of a WFS.
+| `GetFeature` | Returns a selection of feature instances from a data store published through the WFS.
+| `ListStoredQueries` | Returns a list of the queries that have been stored inside the WFS instance.
+| `DescribeStoredQueries` | Returns a description of the queries that have been stored inside the WFS instance.
+| `GetPropertyValue` (optional) | Retrieves the value of a feature property or part of the value of a complex feature property for a set of feature instances
+| `GetFeatureWithLock` (optional) | Serves a similar function to a GetFeature request but with the additional ability to lock a feature, presumably for subsequent updating or changes.
+| `LockFeature` (optional) | Locks a set of feature instances such that no other operations may modify the data while the lock is in place.
+| `Transaction` (optional) | Allows the feature instances and their properties to modified or deleted.
+| `CreateStoredQuery` (optional) | Creates and stores a query that can be rapidly and easily triggered by a client at a later point in time.
+| `DropStoredQuery` (optional) | Deletes a previously stored query from the server.
+|===
+ 
+==== 1.4 Relation to other OGC Standards
+
+- <<2. OGC API - Features>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 1.5 Relation with eCH-0056
+
+The WFS standard is currently mentioned in the following sections:
+
+3.4, 5, 6.4, 6.6 (`QUAL-03`), 6.9, 6.9.2 (`WFS-01`,`WFS-02`,`WFS-03`,`WFS-04`,`WFS-05`,`WFS-06`,`WFS-07`,`WFS-08`,`WFS-09`,`WFS-10`,`WFS-11`,`WFS-12`), 6.11, appendix B (`Mapping: WFS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
+==== 1.6 Proposed modifications to eCH-0056
+
+- Refer to version http://docs.opengeospatial.org/is/09-025r2/09-025r2.html[2.0.2] of the WFS standard in the eCH-0056 document.
+
+=== 2. OGC API - Features
+
+==== 2.1 Introduction
+
+OGC API - Features is a multi-part standard that offers the capability to create, modify, and query spatial data on the Web and specifies requirements and recommendations for APIs that want to follow a standard way of sharing feature data. The Core part of the standard is called *OGC API - Features - Part 1: Core*. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.
+
+==== 2.2 Background
+===== 2.2.1 History
+
+The OGC API Features no longer includes the notion of version. Standards are now named by their functionality.
+
+https://docs.opengeospatial.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core] & https://docs.opengeospatial.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference] were both released in April 2022.
+
+*2* other versions:
+
+- https://docs.ogc.org/DRAFTS/19-079r1.html[OGC API - Features - Part 3:  Filtering and the Common Query Language (CQL)] 
+- https://docs.ogc.org/DRAFTS/20-002.html[OGC API - Features - Part 4: Create, Replace, Update and Delete] 
+
+
+are currently in draft status.
+
+===== 2.2.2 Versions
+
+https://docs.opengeospatial.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference] is the current latest version
+
+NOTE: propose an update of the https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html#background[documentation] to the OGC for the last two points.
+
+===== 2.2.3 Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== 2.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-features[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== 2.3 Operations, Resources
+
+.Overview of OGC API Features resources, applicable HTTP methods and links to the OGC documentation
+[cols="32,25,10,33",options="header"]
+!===
+|Resource |Path |HTTP method |Document reference
+|Landing page |`/` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_api_landing_page[7.2 API landing page]
+|Conformance declaration |`/conformance` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_declaration_of_conformance_classes[7.4 Declaration of conformance classes]
+|Feature collections |`/collections` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collections$$_$$[7.13 Feature collections]
+|Feature collection |`/collections/{collectionId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_collection$$_$$[7.14 Feature collection]
+|Features |`/collections/{collectionId}/items` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_items$$_$$[7.15 Features]
+|Feature |`/collections/{collectionId}/items/{featureId}` |GET | https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_feature$$_$$[7.16 Feature]
+!===
+
+==== 2.4 Relation to other OGC Standards
+
+- <<1. Web Feature Service (WFS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 2.5 Relation with eCH-0056
+
+The OGC API - Features standard is not mentioned in the eCH-0056 document.
+
+==== 2.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC API Features in the same sections as the WFS standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC API Features standard.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API Features.
+
+=== 3. Web Coverage Service (WCS)
+
+==== 3.1 Introduction
+==== 3.2 Background
+===== 3.2.1 History
+===== 3.2.2 Versions
+===== 3.2.3 Implementations
+===== 3.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Coverage Service (WCS) standard has not been integrated into the Testbed platform.
+
+==== 3.3 Operations, Resources
+==== 3.4 Relation to other OGC Standards
+
+- <<4. OGC API - Environmental Data Retrieval>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 3.5 Relation with eCH-0056
+
+The Web Coverage Service (WCS) standard is currently mentioned in the following sections:
+
+5, 6.4, 6.9, 6.9.3 (`WCS-01`,`WCS-02`,`WCS-03`,`WCS-04`,`WCS-05`,`WCS-06`), appendix A (`Mapping: WCS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
+==== 3.6 Proposed modifications to eCH-0056
+
+=== 4. OGC API - Environmental Data Retrieval (EDR)
+
+==== 4.1 Introduction
+==== 4.2 Background
+===== 4.2.1 History
+===== 4.2.2 Versions
+===== 4.2.3 Implementations
+===== 4.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/pygeoapi/collections/ndwi-edr[
+NGDI-20-60 OGC API Testbed Platform]
+
+NOTE: update the link once the structure of the Testbed Platform adapted. 
+
+==== 4.3 Operations, Resources
+
+<<edr-paths>> summarizes the access paths and relation types defined in this standard.
+
+[#edr-paths,reftext='{table-caption} {counter:table-num}']
+.Environmental Data Retrieval API Paths
+[width="90%",cols="3,2,5",options="header"]
+|===
+^|**Path Template** ^|**Relation** ^|**Resource**
+3+^|**Common**
+|<<landing-page,{root}/>> |none |Landing page
+|<<api-definition,{root}/api>> |`service-desc` +
+or +
+`service-doc` |API Description (optional)
+|<<conformance-classes,{root}/conformance>> |`conformance` |Conformance Classes
+3+^|**Collections**
+|<<collection-information-queries,{root}/collections>> |`data` |Metadata describing the <<collection-definition,collections>> of data available from this API.
+|<<collection-information-queries,{root}/collections/{collectionId}>> | |Metadata describing the <<collection-definition,collection>> of data which has the unique identifier `{collectionId}`
+3+^|**Features**
+|<<collection-information-queries,{root}/collections/{collectionId}/items>>|`items`|Retrieve metadata about available items
+3+^|**Queries**
+|<<collection-information-queries,{root}/collections/{collectionId}/{queryType}>>| |Retrieve data according to the query pattern
+|<<collection-information-queries,{root}/collections/{collectionId}/instances>>| |Retrieve metadata about <<instance-definition,instances>> of a <<collection-definition,collection>>
+|<<collection-information-queries,{root}/collections/{collectionId}/instances/{instanceId}>>| |Retrieve metadata from a specific <<instance-definition,instance>> of a <<collection-definition,collection>> which has the unique identifier `{instanceId}`
+|===
+
+Where:
+
+* `{root}` = Base URI for the API server
+* `{collectionId}` = an identifier for a specific <<collection-definition,collection>> of data
+* `{instanceId}` = an identifier for a specific version or <<instance-definition,instance>> of a <<collection-definition,collection>> of data
+* `{queryType}` = an identifier for a specific query pattern to retrieve data from a specific <<collection-definition,collection>> of data
+
+==== 4.4 Relation to other OGC Standards
+
+- <<3. Web Coverage Service (WCS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 4.5 Relation with eCH-0056
+
+The OGC API - Environmental Data Retrieval standard is not mentioned in the eCH-0056 document.
+
+==== 4.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC API EDR in the same sections as the WCS standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC API EDR standard.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API EDR.
+
+=== 5. Sensor Observation Service (SOS)
+
+==== 5.1 Introduction
+==== 5.2 Background
+===== 5.2.1 History
+===== 5.2.2 Versions
+===== 5.2.3 Implementations
+===== 5.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Sensor Observation Service (SOS) standard has not been integrated into the Testbed platform.
+
+==== 5.3 Operations, Resources
+==== 5.4 Relation to other OGC Standards
+
+- <<6. SensorThings API>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 5.5 Relation with eCH-0056
+
+
+The Sensor Observation Service (SOS) standard is currently mentioned in the following sections:
+
+5, 6.14 and the appendix E
+
+of the eCH-0056 document.
+
+==== 5.6 Proposed modifications to eCH-0056
+
+=== 6. OGC SensorThings API
+==== 6.1 Introduction
+==== 6.2 Background
+===== 6.2.1 History
+===== 6.2.2 Versions
+===== 6.2.3 Implementations
+===== 6.2.4 Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#sensorthings-api[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== 6.3 Operations, Resources
+==== 6.4 Relation to other OGC Standards
+
+- <<5. Sensor Observation Service (SOS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== 6.5 Relation with eCH-0056
+
+The OGC SensorThings API standard is not mentioned in the eCH-0056 document.
+
+==== 6.6 Proposed modifications to eCH-0056
+
+- Integrate the OGC SensorThings API in the same sections as the Sensor Observation Service (SOS) standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC SensorThings API.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC SensorThings API.

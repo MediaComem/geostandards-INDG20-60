@@ -1,0 +1,3 @@
+[.text-justify]
+== Appendix B: collaboration and verification 
+
