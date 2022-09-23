@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== Data Encoding Standards
+
+=== Introduction
+=== History
+=== Operations, Ressources
+=== Discussion
