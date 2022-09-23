@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== Visualization standards
+
+=== Introduction
+=== History
+=== Operations, Ressources
+=== Discussion
