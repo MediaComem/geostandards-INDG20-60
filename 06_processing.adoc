@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== Processing Standards
+
+=== Introduction
+=== History
+=== Operations, Ressources
+=== Discussion
