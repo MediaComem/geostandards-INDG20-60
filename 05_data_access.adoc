@@ -1,0 +1,9 @@
+// Document settings
+[.text-justify]
+
+== Data Access Standards
+
+=== Introduction
+=== History
+=== Operations, Ressources
+=== Discussion
