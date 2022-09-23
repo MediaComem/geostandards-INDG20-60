@@ -1,0 +1,4 @@
+// Document settings
+[.text-justify]
+
+== Summary
