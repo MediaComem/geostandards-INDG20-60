@@ -1,0 +1,7 @@
+// Document settings
+[.text-justify]
+
+== Introduction
+
+=== Context
+=== Fundamental questions
