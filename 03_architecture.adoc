@@ -7,3 +7,33 @@
 
 === OGC API Common
 
+https://ogcapi.ogc.org/common[OGC API - Common] is a common framework used in all OGC API's. 
+OGC API - Common provides the following functionality:
+
+- based on https://spec.openapis.org/oas/latest.html[OpenAPI 3.0]
+- HTML and JSON as the dominant encodings, alternative encodings are possible
+- common and shared endpoints such as:
+    - `/` (landing page)
+    - `/conformance`
+    - `/openapi`
+    - `/collections`
+    - `/collections/foo`
+- common aspects such as pagination, links between resources, basic filtering, query parameters (`bbox`, `datetime`, etc.)
+
+OGC API - Common allows for specification developers to focus on the key functionality of a given API (i.e. data access, etc.) while using common constructs. This harmonizes OGC API standards and enables deeper integration with less code. This also allows for OGC API client software to be more streamlined.
+
+The `/conformance` endpoint indicates which standards and extensions are supported by a deployment of OGC API.
+
+#### OGC API building blocks
+
+The OGC API approach allows for modularity and "profiling" of APIs depending on your requirements.  This means you
+can mix and match OGC APIs together.
+
+//Figure 
+.OGC API building blocks
+image::Images/ogc-api-building-blocks.png[align="center"]
+
+You can read more about this topic in the https://opengeospatial.github.io/bblocks/[building blocks website].
+
+
+
