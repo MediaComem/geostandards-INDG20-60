@@ -19,7 +19,7 @@ In term of software, the idea is to offer a unique project entry point for the d
 //Figure 
 //Find a way to add a cross-reference in the text
 .Landing page of the Testbed platform
-image::Images/WP3/ogc-tb-platform.png[align="center"]
+image::Images/ogc-tb-platform.png[align="center"]
 
 This solution is expected to bring good visibility toward all actors concerned by the Swiss standardization process. It is to raise interest from government stakeholders, companies and universities, technical people or not, as a community in synergy when considering the advances at the OGC.
 
@@ -37,7 +37,7 @@ The choice of these solutions was made to cover all the standards to be challeng
 
 //Table
 
-.Implementations according to conformance declarations (status as of May 2022)
+.Implementations according to conformance declarations (status as of September 2022)
 [cols="1,1,1,1,1,1"]
 |===
 ^.^|
