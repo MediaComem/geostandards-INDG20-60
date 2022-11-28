@@ -17,7 +17,6 @@ image::Images/feedback-loop.png[align="center"]
 In term of software, the idea is to offer a unique project entry point for the discovery, experimentation and analysis of the new OGC APIs. To develop the knowledge and practice required, openness is not only related to the standards evaluated, but also required for the software aspects of the Testbed platform. That’s why we identified the Geonovum OGC API Testbed tooling stack cite:[apitestbed] as a good base. It includes already open sourceopen-source packages and provides a detailed documentation available on GitHub. We deployed a project instance at https://ogc.heig-vd.ch/[https://ogc.heig-vd.ch/] (figure 2) which still needs to get populated with the underlying data and configured to serve everything required to run the experimental cases, from server to client sides. This solution will also be used to create tutorials in the style of the documentation proposed by Meteo Canada cite:[eccc-msc].
 
 //Figure 
-//Find a way to add a cross-reference in the text
 .Landing page of the Testbed platform
 image::Images/ogc-tb-platform.png[align="center"]
 

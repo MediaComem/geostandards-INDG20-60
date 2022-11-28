@@ -6,6 +6,7 @@
 :bibtex-style: apa
 :bibtex-format: asciidoc
 :bibtex-throw: true
+:sectnums:
 
 //Inclusion of the contents of linked files
 
@@ -52,20 +53,6 @@ include::09_uses_cases.adoc[]
 // Conclusion
 
 include::10_conclusion.adoc[]
-
-//Other topics (to be confirmed)
-
-// //Measurement and operation services
-
-// include::measurement_operation_services.adoc[]
-
-// //Positioning services
-
-// include::positioning_services.adoc[]
-
-// //Other standards of interest
-
-// include::other_standards_of_interest.adoc[]
 
 //Appendix A: bibliographical references
 

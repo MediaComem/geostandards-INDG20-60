@@ -3,7 +3,215 @@
 
 == Visualization standards
 
-=== Introduction
-=== History
-=== Operations, Ressources
-=== Discussion
+This section describes the main standards for visualising geodata through web geoservices.
+
+=== Web Map Service (WMS)
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Map Service (WMS) standard has not been integrated into the Testbed platform.
+
+==== Operations
+==== Relation to other OGC Standards
+
+- <<OGC API Maps>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The Web Map Service (WMS) standard is currently mentioned in the following sections:
+
+3.4, 5, 3.7, 6.3, 6.6 (`QUAL-02`), 6.7 (`WMS-01`,`WMS-02`,`WMS-03`,`WMS-04`,`WMS-05`,`WMS-06`,`WMS-07`,`WMS-08`,`WMS-09`,`WMS-10`), 6.11, 6.12, appendix B (`Mapping: WMS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+=== OGC API Maps
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== Operations
+==== Relation to other OGC Standards
+
+- <<Web Map Service (WMS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The OGC API Maps standard is not mentioned in the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+The OGC API Maps standard has not yet been validated by the OGC. It is therefore difficult to take a position on its integration into the eCH-0056 document.
+
+=== Web Map Tile Service (WMTS)
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+The Web Map Tile Service (WMTS) standard has not been integrated into the Testbed platform.
+
+==== Operations
+==== Relation to other OGC Standards
+
+- <<OGC API Tiles>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The Web Map Tile Service (WMTS) standard is currently mentioned in the following sections:
+
+2, 3.4, 6.4, 6.8 (`WMTS-01`,`WMTS-02`,`WMTS-03`,`WMTS-04`,`WMTS-05`,`WMTS-06`,`WMTS-07`,`WMTS-08`)
+appendix B (`Mapping: WMTS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
+
+of the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+=== OGC API Tiles
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== Operations
+==== Relation to other OGC Standards
+
+- <<Web Map Tile Service (WMTS)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The OGC API Tiles standard is not mentioned in the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+The OGC API Tiles standard has not yet been validated by the OGC. It is therefore difficult to take a position on its integration into the eCH-0056 document.
+
+=== Styled Layer Descriptor (SLD)
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+==== Operations
+==== Relation to other OGC Standards
+
+- <<OGC API Styles>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The Styled Layer Descriptor (SLD) standard is currently mentioned in the following sections:
+6.7 (`WMS-09`), 6.12 (`SLD-01`) & appendix E of the eCH-056 document.
+
+==== Proposed modifications to eCH-0056
+
+=== Symbology Encoding (SE)
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== Operations
+==== Relation to other OGC Standards
+
+- <<OGC Symbology Conceptual Model: Core Part>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The Styled Layer Descriptor (SLD) standard is currently mentioned in the sections 6.11 the eCH-056 document.
+
+==== Proposed modifications to eCH-0056
+
+=== OGC API Styles
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== Operations
+==== Relation to other OGC Standards
+
+- <<OGC Symbology Conceptual Model>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The OGC API Styles standard is not mentioned in the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+The OGC API Styles standard has not yet been validated by OGC. It is therefore difficult to take a position on its integration into the eCH-0056 document.
+
+=== OGC Symbology Conceptual Model
+==== Introduction
+==== Background
+===== History
+===== Versions
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+==== Operations
+==== Relation to other OGC Standards
+
+- <<Symbology Encoding (SE)>>
+
+NOTE:  compile a summary of the major differences between the 2 standards
+
+==== Relation with eCH-0056
+
+The OGC Symbology Conceptual Model: Core Part standard is not mentioned in the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+- Integrate the OGC Symbology Conceptual Model in the same sections as the Symbology Encoding (SE) standard in the eCH-0056 document  according to its extensions.
+- Add a new section to the eCH-0056 document that describes the OGC Symbology Conceptual Model.
+- Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC Symbology Conceptual Model.

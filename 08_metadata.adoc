@@ -4,6 +4,9 @@
 == Metadata & Catalogue Services Standards
 
 === Introduction
+
+This section describes the main standards for accessing metadata through web geoservices.
+
 === History
 === Operations, Ressources
 === Discussion
