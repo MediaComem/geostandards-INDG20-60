@@ -7,9 +7,20 @@ This section describes the main standards for visualising geodata through web ge
 
 === Web Map Service (WMS)
 ==== Introduction
+
+The OGC Web Map Service Interface Standard (WMS) defines a set of interfaces for requesting map images over the Internet. WMS makes it easy for a client to request images on demand changing parameters such as size and coordinate reference systems. A WMS server (i.e. a service that implements the WMS standard) provides information about what maps the service provides, and it produces a map and answers queries about content the content of a map.
+
+Source : https://opengeospatial.github.io/e-learning/wms/text/basic-main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+The version 1.0.0 was released in April 2000, followed by version 1.1.0 in June 2001,and version 1.1.1 in January 2002. The OGC released WMS version 1.3.0 in January 2004.
+
 ===== Versions
+
+1.3 is the current latest version.
+
 ===== Implementations
 
 Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
@@ -19,6 +30,17 @@ Implementations can be found on the http://www.opengeospatial.org/resource/produ
 The Web Map Service (WMS) standard has not been integrated into the Testbed platform.
 
 ==== Operations
+
+.Overview of the WMS operations
+[cols="1,1"]
+|===
+*Operation* | *Description*
+|`GetCapabilities` |Retrieves metadata about the service, including supported operations and parameters, and a list of the available layers.
+|`GetMap` | Retrieves a map image for a specified area and content.
+|`GetFeatureInfo (optional)` | Retrieves the underlying data, including geometry and attribute values, for a pixel location on a map.
+|`DescribeLayer (optional)` | Indicates the WFS or WCS to retrieve additional information about the layer.
+|`GetLegendGraphic (optional)` | Retrieves a legend for a map.
+|===
 ==== Relation to other OGC Standards
 
 - <<OGC API Maps>>
@@ -35,17 +57,44 @@ of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
+Nothing to mention.
+
 === OGC API Maps
 ==== Introduction
+
+The OGC API Maps specification defines a set of interfaces for requesting map images over the Internet. OGC API Maps makes it easy for a client to request images on demand changing parameters such as size and coordinate reference systems. A OGC API Maps server (i.e. a service that implements the OGC API Maps standard) provides information about what maps the service provides, and it produces a map and answers queries about content the content of a map.
+
 ==== Background
 ===== History
+
+The OGC API Records no longer includes the notion of version. Standards are now named by their functionality.
+
 ===== Versions
+
+[OGC API Maps Part 1 Core](https://docs.ogc.org/DRAFTS/20-058.html) is currently in draft status.
+
 ===== Implementations
 
-Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+The implementation of the OGC API Records is not part of the OGC Compiance Database yet.
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-maps[NGDI-20-60 OGC API Testbed Platform]
+
 ==== Operations
+
+.Overview of OGC API Records resources, applicable HTTP methods
+[cols="32,25,10",options="header"]
+!===
+|Resource |Path |HTTP method 
+|Landing page |`/` |GET
+|Conformance declaration |`/conformance` |GET 
+|Maps collections |`/collections` |GET 
+|Maps collection |`/collections/{collectionId}` |GET 
+|Maps |`/collections/{collectionId}/items` |GET 
+|Maps |`/collections/{collectionId}/items/{featureId}` 
+!===
+
 ==== Relation to other OGC Standards
 
 - <<Web Map Service (WMS)>>
@@ -62,9 +111,18 @@ The OGC API Maps standard has not yet been validated by the OGC. It is therefore
 
 === Web Map Tile Service (WMTS)
 ==== Introduction
+
+The OGC Web Map Tile Service Implementation Standard (WMTS) defines a set of interfaces for making web-based requests of map tiles of spatially referenced data using tile images with predefined content, extent, and resolution. The standard includes the WMTS Specification (“WMTS Spec”) 07-057r7 OpenGIS Web Map Tile Service Implementation Standard along with collateral documentation such as profiles and XML documents.
+
 ==== Background
 ===== History
+
+The version 1.0.0 of the WMTS Specification (“WMTS Spec”) 07-057r7 OpenGIS Web Map Tile Service Implementation Standard was published in 2010, and the Web Map Tile Service Simple Profile was published in 2016.
+
 ===== Versions
+
+1.0.0 is the current latest version.
+
 ===== Implementations
 
 Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
@@ -74,6 +132,18 @@ Implementations can be found on the http://www.opengeospatial.org/resource/produ
 The Web Map Tile Service (WMTS) standard has not been integrated into the Testbed platform.
 
 ==== Operations
+
+.Overview of the WMTS operations
+[cols="1,1"]
+|===
+*Operation* | *Description*
+|`GetCapabilities`|Provides a “ServiceMetadata” document, which describes how to identify WMTS resources or generate WMTS request operations.
+|`GetTile`|Allows a client to request a tile from a WMTS server.
+|`GetFeatureInfo (Optional)`|Provides information about the features at or near a particular pixel location
+|`ServiceMetadata resource (Optional)`|Describes the abilities and information holdings of the specific server implementation.
+|`Tile resource (Optional)`|Provides a fragment of a map representation of a layer.
+|`FeatureInfo resource (Optional)`|Provides information about the features located at a particular pixel of a tile map. It does this in a manner similar to the WMS GetFeatureInfo operation by providing, for example, thematic attribute name and value pairs in textual form.
+|===
 ==== Relation to other OGC Standards
 
 - <<OGC API Tiles>>
@@ -86,53 +156,100 @@ The Web Map Tile Service (WMTS) standard is currently mentioned in the following
 
 2, 3.4, 6.4, 6.8 (`WMTS-01`,`WMTS-02`,`WMTS-03`,`WMTS-04`,`WMTS-05`,`WMTS-06`,`WMTS-07`,`WMTS-08`)
 appendix B (`Mapping: WMTS metadata elements -> GM03`, `Mapping: mandatory GM03 metadata elements -> WMS, WMTS, WFS, WCS et CSW`) & E
-
 of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
+NOTE: check with the eCH-0056 ressources.
+
 === OGC API Tiles
 ==== Introduction
+
+The OGC API Tiles specification defines a set of interfaces for requesting map tiles over the Internet. OGC API Tiles makes it easy for a client to request tiles on demand changing parameters such as size and coordinate reference systems. A OGC API Tiles server (i.e. a service that implements the OGC API Tiles standard) provides information about what tiles the service provides, and it produces a tile and answers queries about content the content of a tile.
+The OGC API Tiles allows to access the same data as the Web Map Tile Service (WMTS) standard, but with a different API and could includes both vector and raster data.
+
 ==== Background
 ===== History
+
+The OGC API Tiles standard no longer includes the notion of version. Standards are now named by their functionality. Version 1.0 was released in the end of 2022.
+
 ===== Versions
+
+[OGC API Tiles Part 1 Core](https://docs.ogc.org/is/20-057/20-057.html) is the latest version.
+
 ===== Implementations
 
 Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-tiles[NGDI-20-60 OGC API Testbed Platform]
+
 ==== Operations
+
+.Overview of OGC API Tiles resources, applicable HTTP methods
+[cols="32,25,10",options="header"]
+!===
+|Resource |Path 
+|Landing page |`/` 
+|Conformance declaration |`/conformance`  
+|Tileset list |`.../tiles`  
+|Tileset |`.../tiles/{tileMatrixSetId}`
+|Tile |`.../tiles/{tileMatrixSetId}`  
+!===
+
 ==== Relation to other OGC Standards
 
 - <<Web Map Tile Service (WMTS)>>
 
-NOTE:  compile a summary of the major differences between the 2 standards
+The OGC API Tiles is intended to be used in conjunction with the following OGC standards:
+
+- <<OGC API Maps>>
+- <<OGC API Styles>>
+- <<OGC API Coverages>>
+- <<OGC API Processes>>
 
 ==== Relation with eCH-0056
 
-The OGC API Tiles standard is not mentioned in the eCH-0056 document.
+The OGC API Tiles standard is not part of the current version of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
-The OGC API Tiles standard has not yet been validated by the OGC. It is therefore difficult to take a position on its integration into the eCH-0056 document.
+The OGC API Tiles standard should be introduced in the eCH-0056 document alongside with the WMTS specification.
+Recommendations on its combination with other standards should also be proposed once these have been validated.
 
 === Styled Layer Descriptor (SLD)
 ==== Introduction
+
+Geospatial data (vector and raster) have no intrinsic visual component. In order to see data, it must be styled. Styling specifies color, thickness, and other visible attributes used to render data on a map. A WMS provides a set of style options for each data set; however these are preconfigured by the server, and the user cannot create, inspect, modify a style. The Styled Layer Descriptor (SLD) is a standard that enables an application to configure in an XML document how to properly portray layers and legends in a WMS. It uses Symbology Ending (SE) to specify styling of features and coverages. The SLD Profile of WMS enhances a WMS with additional operations to support styling of features from WFS and coverages from WCS.
+
+Source : https://opengeospatial.github.io/e-learning/sld/text/main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+The version 1.0 was released in 2002 followed by the version 1.1 in 2007.
+
 ===== Versions
+
+Versions 1.1 - http://portal.opengeospatial.org/files/?artifact_id=22364[OGC 05-078r4] is the latest version.
+
 ===== Implementations
 
 Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
+The Styled Layer Descriptor (SLD) standard is not part of OGC Compliance Database.
+
 ==== Operations
+
+Not applicable.
+
 ==== Relation to other OGC Standards
 
 - <<OGC API Styles>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
+- <<OGC Web Map Service (WMS)>>
 
 ==== Relation with eCH-0056
 
@@ -141,28 +258,49 @@ The Styled Layer Descriptor (SLD) standard is currently mentioned in the followi
 
 ==== Proposed modifications to eCH-0056
 
+As an encoding, SLD should not be integrated in a separate section but combined with other standards (e.g. WMS).
+
 === Symbology Encoding (SE)
 ==== Introduction
+
+Geospatial data (vector and raster) have no intrinsic visual component. In order to see data, it must be styled. Styling specifies color, thickness, and other visible attributes used to render data on a map. The Symbology Encoding (SE) standard defines the language to formally encode the rules of how to portray features and coverages.
+
+Source : https://opengeospatial.github.io/e-learning/se/text/main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+The version 1.1.0 was approved as a standard in July 2006. Previous use of symbology encoding was through version 1.0.0 of the Styled Layer Descriptor (SLD) standard. To allow parts that are not specific to SLD and Web Map Services (WMS) to be reused, SLD 1.0.0 was split up into the separate standards of SE 1.1.0 and SLD 1.1.0.
+
+Source : https://opengeospatial.github.io/e-learning/se/text/main.html[Open Geospatial Consortium]
+
 ===== Versions
+
+Version 1.1.0 is the current latest.
+
 ===== Implementations
 
-Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+The Symbology Encoding standard is not part of OGC Compliance Database. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Not applicable
+
 ==== Operations
 ==== Relation to other OGC Standards
 
 - <<OGC Symbology Conceptual Model: Core Part>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
+- <<Styled Layer Descriptor (SLD)>>
+- <<OGC API Styles>>
+- <<OGC Web Map Service (WMS)>>
 
 ==== Relation with eCH-0056
 
-The Styled Layer Descriptor (SLD) standard is currently mentioned in the sections 6.11 the eCH-056 document.
+The Symbology Encoding (SE) standard is currently mentioned in the sections 6.11 the eCH-056 document.
 
 ==== Proposed modifications to eCH-0056
+
+The Symbology Encoding (SE) standard should be kept in the eCH-056 document alongside with the OGC Symbology Conceptual Model standard. 
 
 === OGC API Styles
 ==== Introduction
@@ -192,19 +330,47 @@ The OGC API Styles standard has not yet been validated by OGC. It is therefore d
 === OGC Symbology Conceptual Model
 ==== Introduction
 ==== Background
+
+The Symbology Conceptual Model is a new approach:
+
+* to provide the felxibility required to achieve adequate cartographic styling and fill the needs of a variety of information communities
+* to achieve high level styling interoperability without encoding dependencies.
 ===== History
 ===== Versions
+
+Version 1.0 was released in 2020.
+
 ===== Implementations
 
-Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+The Symbology Encoding standard is not part of OGC Compliance Database. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Not applicable
+
 ==== Operations
+
+Although not applicable here, it is important to mention that the standard is divided into different classes such as:
+
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc14[Class Style]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc15[Class Rule]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc16[Class Symbolizer]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc17[Class ParameterValue]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc18[Class Literal]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc19[Class UOM Codelist]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc20[Class Color]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc21[Class Fill]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc22[Class Stroke]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc23[Class Graphic]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc24[Class GraphicSize]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc25[Class Label]
+* https://docs.ogc.org/is/18-067r3/18-067r3.html#toc26[Class Font]
+
 ==== Relation to other OGC Standards
 
 - <<Symbology Encoding (SE)>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
+- <<Styled Layer Descriptor (SLD)>>
+- <<OGC API Styles>>
 
 ==== Relation with eCH-0056
 

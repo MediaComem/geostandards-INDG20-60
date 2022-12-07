@@ -60,6 +60,10 @@ include::10_conclusion.adoc[]
 
 bibliography::[]
 
+//Appendix B: conference papers
+
+include::conferences.adoc[]
+
 //Appendix B: collaboration and verification 
 
 //include::collaboration_verification.adoc[]
@@ -68,9 +72,6 @@ bibliography::[]
 
 //include::abbreviations_glossary.adoc[]
 
-//Appendix D: conference papers
-
-include::conferences.adoc[]
 
 //Appendix E: follow up meetings
 
