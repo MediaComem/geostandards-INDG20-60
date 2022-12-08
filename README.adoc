@@ -70,9 +70,6 @@ include::Follow-up-meetings/25-05-2022.adoc[]
 include::Follow-up-meetings/31-05-2022.adoc[]
 include::Follow-up-meetings/20-06-2022.adoc[]
 include::Follow-up-meetings/11-07-2022.adoc[]
-include::Follow-up-meetings/12-09-2022.adoc[]
-include::Follow-up-meetings/24-10-2022.adoc[]
-include::Follow-up-meetings/14-11-2022.adoc[]
 
 //Appendix B: collaboration and verification 
 //include::collaboration_verification.adoc[]
