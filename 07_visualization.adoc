@@ -365,6 +365,7 @@ The Symbology Conceptual Model is a new approach:
 
 * to provide the felxibility required to achieve adequate cartographic styling and fill the needs of a variety of information communities
 * to achieve high level styling interoperability without encoding dependencies.
+
 ===== History
 ===== Versions
 

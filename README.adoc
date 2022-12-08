@@ -64,26 +64,18 @@ bibliography::[]
 
 include::conferences.adoc[]
 
+== Appendix C: follow up meetings
+
+include::Follow-up-meetings/25-05-2022.adoc[]
+include::Follow-up-meetings/31-05-2022.adoc[]
+include::Follow-up-meetings/20-06-2022.adoc[]
+include::Follow-up-meetings/11-07-2022.adoc[]
+include::Follow-up-meetings/12-09-2022.adoc[]
+include::Follow-up-meetings/24-10-2022.adoc[]
+include::Follow-up-meetings/14-11-2022.adoc[]
+
 //Appendix B: collaboration and verification 
-
 //include::collaboration_verification.adoc[]
-
 //Appendix C: abbreviations and glossary
-
 //include::abbreviations_glossary.adoc[]
-
-
 //Appendix E: follow up meetings
-
-// == Appendix E: follow up meetings
-
-// include::Follow-up-meetings/25-05-2022.adoc[]
-// include::Follow-up-meetings/31-05-2022.adoc[]
-// include::Follow-up-meetings/20-06-2022.adoc[]
-// include::Follow-up-meetings/11-07-2022.adoc[]
-// include::Follow-up-meetings/06-09-2022.adoc[]
-// include::Follow-up-meetings/12-09-2022.adoc[]
-// include::Follow-up-meetings/03-10-2022.adoc[]
-// include::Follow-up-meetings/24-10-2022.adoc[]
-// include::Follow-up-meetings/14-11-2022.adoc[]
-// include::Follow-up-meetings/05-12-2022.adoc[]
