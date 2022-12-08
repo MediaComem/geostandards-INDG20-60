@@ -9,9 +9,20 @@ This section describes the main standards for accessing processes through web ge
 
 === Web Processing Service (WPS)
 ==== Introduction
+
+The OGC Web Processing Service (WPS) Interface Standard specifies a standard interface that provides access to pre-defined processes and provides job control operations that can instantiate, control and monitor processing jobs. In this context, the term process refers to any algorithm, calculation or model that either generates new data or transforms some input data into output data. A WPS enables the execution of computing processes that typically combine raster, vector, and/or coverage data to produce new raster, vector, and/or coverage data. The inputs, processes and outputs offered by a WPS can also be non-spatial.
+
+Source : https://opengeospatial.github.io/e-learning/wps/text/basic-main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+WPS version 1.0.0 was released in June 2007. Version 2.0.1 was released in January 2015.
+
 ===== Versions
+
+http://docs.opengeospatial.org/is/14-065/14-065.html[Version 2.0.1 - 14-065]  is the current latest.
+
 ===== Implementations
 
 Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
@@ -25,36 +36,59 @@ The Web Processing Service (WPS) standard has not been integrated into the Testb
 
 - <<OGC API - Processes>>
 
-NOTE:  compile a summary of the major differences between the 2 standards
-
 ==== Relation with eCH-0056
 
 The Web Processing Service (WPS) standard is not mentioned in the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
+If WPS should be included in the eCH-0056 document, it would be interesting to use the (more recent) OGC API Processes. The issue will be addressed in the workshops dedicated to the eCH-0056 revision.
+
 === OGC API - Processes
 ==== Introduction
+
+The OGC API — Processes standard supports the wrapping of computational tasks into executable processes that can be offered by a server through a Web API and be invoked by a client application. The standard specifies a processing interface to communicate over a RESTful protocol using JavaScript Object Notation (JSON) encodings. The standard leverages concepts from the OGC Web Processing Service (WPS) 2.0 Interface Standard but does not require implementation of a WPS. The Core part of the standard is called OGC API - Processes - Part 1: Core. The Core part of the standard supports the wrapping of computational tasks into executable processes that can be offered by a server through a Web API and be invoked by a client application either synchronously or asynchronously. Examples of computational processes that can be supported by implementations of this specification include raster algebra, geometry buffering, constructive area geometry, routing, imagery analysis and several others.
+
+Source : https://opengeospatial.github.io/e-learning/ogcapi-processes/text/basic-main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+Several of the concepts specified in OGC API - Processes originated in work specifying a RESTful interface for WPS 2.0. From February 2019 onwards, all work relating to a RESTful interface for the WPS 2.0 was changed to focus on OGC API - Processes.
+
 ===== Versions
+
+https://docs.ogc.org/is/18-062r2/18-062r2.html[OGC API - Processes - Part 1: Core - 18-062r2] is the current latest.
+
 ===== Implementations
 
-Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+Implementations can be found https://github.com/opengeospatial/ogcapi-processes/blob/master/implementations.adoc[here]. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
-Examples of implementations can be found on the https://ogc.heig-vd.ch/pygeoapi/processes?f=html[
+Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-processes[
 NGDI-20-60 OGC API Testbed Platform]
 
-NOTE: update the link once the structure of the Testbed Platform adapted.
-
 ==== Operations
+
+.Overview of the OGC API Processes resources
+[cols="20, 20, 10",options="header"]
+!===
+| Resource | Path | Purpose
+| Landing page | `/` | This is the top-level resource, which serves as an entry point.
+| Conformance declaration | `/conformance` | This resource presents information about the functionality that is implemented by the server.
+| API Definition | `/api` | This resource provides metadata about the API itself. Note use of **/api** on the server is optional and the API definition may be hosted on completely separate server.
+| Process list | `/processes` | Process identifiers, links to process descriptions.
+| Process description | `/processes/{processID}` | Retrieves a process description.
+| Process execution | `/processes/{processID}/execution` | Creates and executes a job.
+| Job status info | `/jobs/{jobID}` | Retrieves information about the status of a job.
+| Job results | `/jobs/{jobID}/results` | Retrieves the result(s) of a job.
+| Job list | `/jobs` | Retrieves the list of jobs.
+| Job Deletion | `/jobs/{jobID}` | Cancels and deletes a job.
+!===
 ==== Relation to other OGC Standards
 
 - <<Web Processing Service (WPS)>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 
@@ -62,7 +96,5 @@ The OGC API - Processes standard is not mentioned in the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
-- Integrate the OGC API - Processes in the same sections as the WPS standard in the eCH-0056 document  according to its extensions.
 - Add a new section to the eCH-0056 document that describes the OGC API - Processes.
 - Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API - Processes.
-

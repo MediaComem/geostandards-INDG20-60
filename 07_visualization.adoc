@@ -19,7 +19,7 @@ The version 1.0.0 was released in April 2000, followed by version 1.1.0 in June 
 
 ===== Versions
 
-1.3 is the current latest version.
+https://portal.ogc.org/files/?artifact_id=14416[Version 1.3 - 06-042] is the current latest.
 
 ===== Implementations
 
@@ -44,8 +44,6 @@ The Web Map Service (WMS) standard has not been integrated into the Testbed plat
 ==== Relation to other OGC Standards
 
 - <<OGC API Maps>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 
@@ -75,7 +73,7 @@ The OGC API Records no longer includes the notion of version. Standards are now 
 
 ===== Implementations
 
-The implementation of the OGC API Records is not part of the OGC Compiance Database yet.
+The implementation of the OGC API Records is not part of the OGC Compliance Database yet.
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
@@ -99,8 +97,6 @@ Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-
 
 - <<Web Map Service (WMS)>>
 
-NOTE:  compile a summary of the major differences between the 2 standards
-
 ==== Relation with eCH-0056
 
 The OGC API Maps standard is not mentioned in the eCH-0056 document.
@@ -121,7 +117,7 @@ The version 1.0.0 of the WMTS Specification (“WMTS Spec”) 07-057r7 OpenGIS W
 
 ===== Versions
 
-1.0.0 is the current latest version.
+https://portal.ogc.org/files/?artifact_id=35326[Version 1.0.0 - 07-057r7] is the current latest.
 
 ===== Implementations
 
@@ -148,8 +144,6 @@ The Web Map Tile Service (WMTS) standard has not been integrated into the Testbe
 
 - <<OGC API Tiles>>
 
-NOTE:  compile a summary of the major differences between the 2 standards
-
 ==== Relation with eCH-0056
 
 The Web Map Tile Service (WMTS) standard is currently mentioned in the following sections:
@@ -160,7 +154,7 @@ of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
-NOTE: check with the eCH-0056 ressources.
+Add joint references to OGC API Tiles in eCH-0056 document. 
 
 === OGC API Tiles
 ==== Introduction
@@ -175,7 +169,7 @@ The OGC API Tiles standard no longer includes the notion of version. Standards a
 
 ===== Versions
 
-[OGC API Tiles Part 1 Core](https://docs.ogc.org/is/20-057/20-057.html) is the latest version.
+[OGC API Tiles Part 1 Core - 20-057](https://docs.ogc.org/is/20-057/20-057.html) is the latest version.
 
 ===== Implementations
 
@@ -232,7 +226,7 @@ The version 1.0 was released in 2002 followed by the version 1.1 in 2007.
 
 ===== Versions
 
-Versions 1.1 - http://portal.opengeospatial.org/files/?artifact_id=22364[OGC 05-078r4] is the latest version.
+http://portal.opengeospatial.org/files/?artifact_id=22364[Versions 1.1 - 05-078r4] is the current latest.
 
 ===== Implementations
 
@@ -276,7 +270,7 @@ Source : https://opengeospatial.github.io/e-learning/se/text/main.html[Open Geos
 
 ===== Versions
 
-Version 1.1.0 is the current latest.
+https://portal.ogc.org/files/?artifact_id=16700[Version 1.1.0 - 05-077r4] is the current latest.
 
 ===== Implementations
 
@@ -304,20 +298,56 @@ The Symbology Encoding (SE) standard should be kept in the eCH-056 document alon
 
 === OGC API Styles
 ==== Introduction
+
+The OGC API - Styles draft specification defines a Web API that enables map servers, clients as well as visual style editors, to manage and fetch styles that consist of symbolizing instructions that can be applied by a rendering engine on features and/or coverages. The API implements the conceptual model for style encodings and style metadata.
+
 ==== Background
 ===== History
+
+OGC API - Styles - Part 1: Core standard is currently in draft status.
+
 ===== Versions
+
+OGC API - Styles - Part 1: Core standard is currently in draft status.
+
 ===== Implementations
 
-Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Compliance Database]. 
+The OGC API Styles is not part of the OGC Compliance Database. 
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
-==== Operations
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/geoserver/ogc/styles[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== Operations, ressources
+
+The API building blocks support the resources and operations listed in the table below with the associated conformance class and the link to the document section that specifies the requirements.
+
+The `baseResource` is a path template for any API resource with which styles can be associated.
+
+.Overview of OGC API Stlyes resources and applicable HTTP methods
+[cols="15,24,8,18,25",options="header"]
+!===
+|Resource |Path |HTTP method |Conformance class|Document reference
+|Base resource |`{baseResource}` |GET |core |<<base-resource>>
+|Conformance declaration |`/conformance` |GET |core |<<conformance_declaration>>
+.3+|Styles .3+|`{baseResource}/styles` |GET |core |<<get_styles>>
+.2+|POST |manage-styles |<<create_style>>
+|style-validation |<<style_validate>>
+.4+|Style .4+|`{baseResource}/styles/{styleId}` |GET |core |<<get_style>>
+.2+|PUT |manage-styles |<<replace_style>>
+|style-validation |<<style_validate>>
+|DELETE |manage-styles |<<delete_style>>
+.3+|Style metadata .3+|`{baseResource}/styles/{styleId}/metadata` |GET |core |<<get_style_metadata>>
+|PUT |manage-styles |<<replace_style_metadata>>
+|PATCH |manage-styles |<<update_style_metadata>>
+!===
+
 ==== Relation to other OGC Standards
 
+- <<Styled Layer Descriptor (SLD)>>
+- <<Symbology Encoding (SE)>>
 - <<OGC Symbology Conceptual Model>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 

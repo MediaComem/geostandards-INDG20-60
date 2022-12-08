@@ -17,3 +17,5 @@ More detailed information can be obtained via the following links:
 
 * http://opengeospatial.github.io/e-learning/geopackage/text/basic-index.html[GeoPackage]
 * http://opengeospatial.github.io/e-learning/gml/text/index.html[Geography Markup Language (GML)]
+
+Source: https://opengeospatial.github.io/e-learning/data-encoding-standards/basic-index.html[Open Geosptial Consortium]

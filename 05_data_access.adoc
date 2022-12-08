@@ -23,7 +23,7 @@ WFS version 1.0.0 in May 2002, followed by version 1.1.0 in May 2005,and version
 
 ===== Versions
 
-2.0.2 is the current latest version
+https://docs.opengeospatial.org/is/09-025r2/09-025r2.html[Version 2.0.2 - 09-025r2] is the current latest.
 
 ===== Implementations
 
@@ -55,8 +55,6 @@ The Web Feature Service (WFS) standard has not been integrated into the Testbed 
 ==== Relation to other OGC Standards
 
 - <<OGC API - Features>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 
@@ -95,7 +93,7 @@ are currently in draft status.
 
 ===== Versions
 
-https://docs.opengeospatial.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference] is the current latest version
+https://docs.opengeospatial.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference - 18-058r1] is the current latest version
 
 // NOTE: propose an update of the https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html#background[documentation] to the OGC for the last two points.
 
@@ -126,8 +124,6 @@ NGDI-20-60 OGC API Testbed Platform]
 
 - <<Web Feature Service (WFS)>>
 
-NOTE:  compile a summary of the major differences between the 2 standards
-
 ==== Relation with eCH-0056
 
 The OGC API - Features standard is not mentioned in the eCH-0056 document.
@@ -139,24 +135,45 @@ The OGC API - Features standard is not mentioned in the eCH-0056 document.
 - Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API Features.
 
 === Web Coverage Service (WCS)
-
-NOTE: section to be completed
-
 ==== Introduction
+
+The OGC Web Coverage Service (WCS) supports electronic retrieval of geospatial data as “coverages.” Coverages are digital geospatial information representing space/time-varying phenomena, specifically spatio-temporal regular and irregular grids, point clouds, and general meshes. WCS offer the means to retrieve or query geographic coverages in a manner independent of the format in which the data is stored.
+
+Source: https://opengeospatial.github.io/e-learning/wcs/text/basic-main.html[Open Gepspatial Consortium]
+
 ==== Background
 ===== History
+
+- WCS 2.0.0 was approved in October 2010
+- WCS 2.0.1 was approved in July 2012
+- WCS 2.1 was approved in June 2018
+
 ===== Versions
+
+2.1 is the current latest version
+
 ===== Implementations
+
+Implementations can be found at the http://www.opengeospatial.org/resource/products/byspec[OGC database]. 
+
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
 The Web Coverage Service (WCS) standard has not been integrated into the Testbed platform.
 
 ==== Operations, Resources
+
+.Overview of the WCS Operations
+[cols="30,80",options="header"]
+!===
+| Operation | Description
+| `GetCapabilities` | Retrieves metadata about the service, including supported operations and parameters, and a list of the available coverages.
+| `DescribeCoverage` | Returns a description of the coverage offered or accepted by an instance of a WCS.
+| `GetCoverage` | Returns a selection of coverage instances from a data store published through the WCS.
+!===
+
 ==== Relation to other OGC Standards
 
 - <<OGC API - Environmental Data Retrieval>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 
@@ -168,15 +185,83 @@ of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
-=== OGC API - Environmental Data Retrieval (EDR)
+- Update the reference to the WCS standard in the eCH-0056 document according to its latest version.
 
-NOTE: section to be completed
-
+=== OGC API Coverages
 ==== Introduction
+
+The OGC API - Coverages draft specification defines a Web API for accessing coverages that are modeled according to the Coverage Implementation Schema (CIS) 1.1. Coverages are represented by some binary or ASCII serialization, specified by some data (en­coding) format. Arguably the most popular type of coverage is that of a gridded coverage. Gridded coverages have a grid as their domain set describing the direct positions in multi-dimensional coordinate space, depending on the type of grid. Satellite imagery is typically modeled as a gridded coverage, for example.
+
 ==== Background
 ===== History
+
+This standard is in a draft state.
+
 ===== Versions
+
+https://docs.ogc.org/DRAFTS/19-087.html[Version 0.0.6 - 19-087] is in a draft state.
+
 ===== Implementations
+
+Not applicable.
+
+===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
+
+Examples of implementations can be found on the https://ogc.heig-vd.ch/pygeoapi/collections/ndvi[
+NGDI-20-60 OGC API Testbed Platform]
+
+==== Operations, Resources
+
+.Coverage API Resources
+[width="90%",cols="2,4",options="header"]
+|===
+^|Resource URI ^|Description
+|<<landing-page,{datasetAPI}/>> |Landing page for this dataset distribution
+|<<api-definition,{datasetAPI}/api>> | API description (e.g. OpenAPI)
+|<<api-definition,{datasetAPI}/api>> |API documentation (optional, e.g. HTML)
+|<<conformance-classes,{datasetAPI}/conformance>> |Conformance Classes
+|<<collections,{datasetAPI}/collections>> |The list off all collections available, some or all of which may be accessible using this Coverage API. Each of these collection objects take the same form as that of the collection resource object described immediately below.
+|<<collectionInfo,{datasetAPI}/collections/{collectionId}>> |resource corresponding to the collection with the unique identifier `{collectionId}`, which may be accessible as a coverage. The resource will describe key elements such as an `id`, `title`, `description`, available `crs` and `extent` (the coverage envelope) as well as links to resources pertaining to this collection. For coverages, it will either embed or link to a CIS JSON encoding of both the range type and the domain set. It is comparable to a WCS *_DescribeCoverage_* response, with the exception that the range type and domain set may have to be retrieved separately by following a link to accommodate the case where they may be considerably large, and the domain set may support query parameters to subset it.
+2+^|**Coverages**
+|<<coverage-clause,{datasetAPI}/collections/{collectionId}/coverage>> |returns the coverage including all of its components (domain set, range type, range set and metadata), to the extent that it is supported by the selected representation (see format encoding for ways to retrieve in specific formats). It is comparable to a WCS *_GetCoverage_* response.
+|<<coverage-rangeset-clause,{datasetAPI}/collections/{collectionId}/coverage/rangeset>> |if supported by the service and by the selected representation, returns only the coverage's range set, i.e., the actual values in the selected representation without any accompanying description or extra information.
+|<<coverage-rangetype-clause,{datasetAPI}/collections/{collectionId}/coverage/rangetype>> |if available separately from the collection resource, returns the coverage's range type information, i.e., a description of the data semantics (their components and data type).
+|<<coverage-domainset-clause,{datasetAPI}/collections/{collectionId}/coverage/domainset>> |if available separately from the collection resource, returns the coverage's domain set definition (the detailed n-dimensional space covered by the data).
+|<<coverage-metadata-clause,{datasetAPI}/collections/{collectionId}/coverage/metadata>> |if available, returns the associated coverage metadata as defined by the CIS model, which may be e.g. domain specific metadata.
+|===
+
+==== Relation to other OGC Standards
+
+- <<Web Coverage Service (WCS)>>
+
+==== Relation with eCH-0056
+
+The OGC API - Coverages standard is not mentioned in the eCH-0056 document.
+
+==== Proposed modifications to eCH-0056
+
+Not applicable as it is not yet a valid standard.
+
+=== OGC API - Environmental Data Retrieval (EDR)
+==== Introduction
+
+OGC API - Environmental Data Retrieval is a standard that provides a family of lightweight interfaces to access Environmental Data resources. The standard, which is also called the Environmental Data Retrieval (EDR) API, addresses two fundamental operations; discovery and query. Discovery operations allow the API to be interrogated to determine its capabilities and retrieve information (metadata) about this distribution of a resource. This includes the API definition of the server as well as metadata about the Environmental Data resources provided by the server. Query operations allow Environmental Data resources to be retrieved from the underlying data store based upon simple selection criteria, defined by this standard and selected by the client.
+
+Source: https://opengeospatial.github.io/e-learning/ogcapi-edr/text/basic-main.html[Open Gepspatial Consortium]
+
+==== Background
+===== History
+
+Version 1.0.0 was published in 2021.
+
+===== Versions
+
+https://docs.ogc.org/is/19-086r5/19-086r5.html[Version 1.0.0 - 19-086r5] is the current latest version
+
+===== Implementations
+
+Implementations can be found on the http://www.opengeospatial.org/resource/products/byspec[OGC Product Database].
+
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
 Examples of implementations can be found on the https://ogc.heig-vd.ch/pygeoapi/collections/ndwi-edr[
@@ -222,8 +307,6 @@ Where:
 - <<Sensor Observation Service (SOS)>>
 - <<OGC API SensorThings>>
 
-NOTE:  compile a summary of the major differences between the standards
-
 ==== Relation with eCH-0056
 
 The OGC API - Environmental Data Retrieval standard is not mentioned in the eCH-0056 document.
@@ -235,22 +318,50 @@ The OGC API - Environmental Data Retrieval standard is not mentioned in the eCH-
 - Update the structure of the eCH-0056 document according to the versions and functionalities of the OGC API EDR.
 
 === Sensor Observation Service (SOS)
-
 ==== Introduction
+
+The Sensor Observation Service (SOS) defines a web service interface that allows retrieval of observations, sensor metadata and representations of the features from which the observations are taken. The service interface also allows publishing of new observations, as well as registration and removal of sensors.
+
 ==== Background
 ===== History
+
+SOS version 2.0 was released in April 2012 SOS version 1.0 was released in October 2007
+
 ===== Versions
+
+https://portal.ogc.org/files/?artifact_id=47599[Version 2.0 - 12-006] is the current latest.
+
 ===== Implementations
+
+Implementations can be found at the http://www.opengeospatial.org/resource/products/byspec[OGC database].
+
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
 The Sensor Observation Service (SOS) standard has not been integrated into the Testbed platform.
 
 ==== Operations, Resources
+
+.Overview of the SOS operations
+[cols="30, 80",options="header"]
+!===
+| Operation | Description
+| `GetCapabilities` | Returns a document that describes the functionality and resources offered by the SOS service that is provided by the server.
+| `DescribeSensor` | Returns a description of the procedures or sensors associated with an SOS.
+| `GetObservation` | Returns observation data that has been collected by the procedure or sensor.
+| `GetFeatureOfInterest (Optional)` | Returns a description of the features of interest for which the SOS offers observations.
+| `GetObservationById (Optional)` | Allows the client application to retrieve an observation by passing a pointer to that observation.
+| `InsertSensor (Optional)` | Registers a new sensor system in the SOS.
+| `DeleteSensor (Optional)` | Deletes a new sensor system from the SOS.
+| `InsertObservation (Optional)` | Allows client applications to insert new observations for a registered sensor system.
+| `InsertResultTemplate (Optional)` | Allows client applications to upload a template for result values such that result values that conform to the template can be inserted into the SOS using subsequent calls of the InsertResult operation.
+| `InsertResult (Optional)` | Allows a client application to insert new observations for a sensor system by inserting only the results of the observations and reusing other metadata provided by a template.
+| `GetResultTemplate (Optional)` | Returns a result template that describes the exact structure used by a specific procedure or sensor to generate a new observation result.
+| `GetResult (Optional)` | Allows retrieving just the result values of observations without the entire metadata of the observation.
+!===
+
 ==== Relation to other OGC Standards
 
 - <<SensorThings API>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 
@@ -262,23 +373,54 @@ of the eCH-0056 document.
 
 ==== Proposed modifications to eCH-0056
 
+Add a new section to the eCH-0056 document about the Sensor Observation Service (SOS) standard.
+
 === OGC SensorThings API
 ==== Introduction
+
+The Internet of Things (IoT) is a global information infrastructure that enables advanced services by interconnecting both physical and virtual “things” based on existing and evolving interoperable information and communication technologies [ITU-T]. To facilitate geospatial interoperability between devices in the IoT, the OGC has published the OGC SensorThings API.
+
+The OGC SensorThings API is a multi-part standard for an open and geospatial-enabled approach for interconnecting devices, data, and applications of the Internet of Things (IoT). The first part of the standard describes the interface for Sensing. The second part describes the interface for Tasking. The Sensing part standardizes the management and retrieval of observations and metadata from heterogeneous IoT sensor systems. The Tasking part, which is to be developed in the future, is expected to provide a standard way for parameterizing - also called tasking - of IoT devices that can be instructed to carry out observations or perform other functions.
+
+Source: https://opengeospatial.github.io/e-learning/sta/text/main.html[Open Geospatial Consortium]
+
 ==== Background
 ===== History
+
+SensorThings API Part 1: Sensing version 1.0 was released in 2016 followed by version 1.1 ion 2021.
+
 ===== Versions
+
+https://docs.ogc.org/is/18-088/18-088.html[Version 1.1 - 18-088] is the latest
+
 ===== Implementations
+
+Implementations are listed on the http://www.opengeospatial.org/resource/products/byspec[OGC website].
+
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
 Examples of implementations can be found on the https://ogc.heig-vd.ch/#sensorthings-api[
 NGDI-20-60 OGC API Testbed Platform]
 
 ==== Operations, Resources
+
+.Overview of the SensorThings API ressources
+[cols="30, 80",options="header"]
+!===
+| Operation | Description
+| `Thing` | The OGC SensorThings API follows the ITU-T definition, i.e., with regard to the Internet of Things, a thing is an object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks [ITU-T].
+| `Location` | The Location entity locates the Thing or the Things it associated with. A Thing’s Location entity is defined as the last known location of the Thing.
+| `HistoricalLocation` | A Thing’s HistoricalLocation entity set provides the times of the current (i.e., last known) and previous locations of the Thing.
+| `Datastream` | A Datastream groups a collection of Observations measuring the same ObservedProperty and produced by the same Sensor.
+| `Sensor` | A Sensor is an instrument that observes a property or phenomenon with the goal of producing an estimate of the value of the property.
+| `ObservedProperty` | An ObservedProperty specifies the phenomenon of an Observation.
+| `Observation` | An Observation is the act of measuring or otherwise determining the value of a property.
+| `FeatureOfInterest` | The phenomenon against which an observation is made is a property of the feature of interest.
+!===
+
 ==== Relation to other OGC Standards
 
 - <<Sensor Observation Service (SOS)>>
-
-NOTE:  compile a summary of the major differences between the 2 standards
 
 ==== Relation with eCH-0056
 

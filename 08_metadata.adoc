@@ -7,8 +7,6 @@
 
 This section describes the main standards for accessing metadata through web geoservices.
 
-=== Introduction
-
 === Catalog Services for the web (CSW)
 
 ==== Introduction
@@ -25,7 +23,7 @@ The version 2.0.2 was released in 2007 followed by the version 3.0 in 2016 which
 
 ===== Versions
 
-3.0 is the current latest version. It adds open search support.
+http://docs.opengeospatial.org/is/12-168r6/12-168r6.html[Version 3.0 - 12-168r6] is the current latest. It adds open search support.
 
 ===== Implementations
 
@@ -76,15 +74,15 @@ OGC API - Records is a new OGC API standard that provides a simple and consisten
 
 ===== History
 
-The OGC API Records no longer includes the notion of version. Standards are now named by their functionality.
+The OGC API - Records standard is currently in draft status.
 
 ===== Versions
 
-[OGC API Records Part 1 Core](https://docs.ogc.org/DRAFTS/20-004.html) is currently in draft status.
+https://docs.ogc.org/DRAFTS/20-004.html[OGC API Records Part 1 Core - 20-004] is currently in draft status.
 
 ===== Implementations
 
-The implementation of the OGC API Records is not part of the OGC Compiance Database yet.
+The implementation of the OGC API Records is not part of the OGC Compliance Database yet.
  
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
@@ -125,7 +123,7 @@ At its core, the SpatioTemporal Asset Catalog (STAC) specification provides a co
 
 ===== Implementations
 
-The implementation of STAC is not part of the OGC Compiance Database yet.
+The implementation of STAC is not part of the OGC Compliance Database yet.
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
