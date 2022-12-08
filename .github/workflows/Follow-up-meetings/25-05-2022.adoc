@@ -1,0 +1,46 @@
+=== 25-05-2022
+
+==== Date & Time
+
+- 25.05.2022 09:00-10:00
+
+==== Attendees
+
+- Frank
+- Jens
+- Maxime
+
+==== Agenda
+
+[cols="1,1,1"]
+|===
+^.^|Who
+^.^|What
+^.^|Comments
+^.^|Frank
+.^|Plan MS-Teams meetings every 3 weeks
+^.^|Done ✅
+^.^|Frank
+.^|Synchronisation of meeting notes on GitHub
+^.^|Done ✅
+^.^|Frank
+.^|Valuation of presentation materials, publication etc. on GitHub
+^.^|Done ✅
+^.^|Frank
+.^|Add a link to the TB platform on the project documentation an ad hoc section in the documentation
+^.^|Done ✅
+|===
+
+==== Related documents and resources
+
+* https://mediacomem.github.io/geostandards-INDG20-60/[Project Documentation]
+* https://ogc.heig-vd.ch/[NGDI-20-60 OGC API Testbed Platform]
+
+==== Next meeting
+
+31.05.2022
+
+==== Miscellaneous
+
+Nothing to mention
+
