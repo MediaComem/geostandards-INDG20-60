@@ -65,7 +65,7 @@ The OGC API Maps specification defines a set of interfaces for requesting map im
 ==== Background
 ===== History
 
-The OGC API Records no longer includes the notion of version. Standards are now named by their functionality.
+The OGC API Maps no longer includes the notion of version. Standards are now named by their functionality.
 
 ===== Versions
 
@@ -73,7 +73,7 @@ The OGC API Records no longer includes the notion of version. Standards are now 
 
 ===== Implementations
 
-The implementation of the OGC API Records is not part of the OGC Compliance Database yet.
+The implementation of the OGC API Maps is not part of the OGC Compliance Database yet.
 
 ===== Endpoints on the NGDI-20-60 OGC API Testbed Platform
 
