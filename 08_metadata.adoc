@@ -52,6 +52,7 @@ The Catalogue Services for the Web (CSW) standard has not been integrated into t
 - <<OGC API Records>>
 - <<Spatio Temporal Asset Catalog>>
 
+
 ==== Relation with eCH-0056
 
 The CSW standard is currently mentioned in the following sections:
