@@ -1,4 +1,0 @@
-== Appendix B: conference papers
-
-* link:https://github.com/MediaComem/geostandards-INDG20-60/blob/main/Presentations/GIS-Normung-international-Spirgartentreffen-2022.pdf[Spiergarten Treffen 2022]
-* link:https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLVIII-4-W1-2022/59/2022/[FOSS4G 2022 & ISPRS]
