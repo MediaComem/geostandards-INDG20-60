@@ -107,6 +107,7 @@ Examples of implementations can be found on the https://ogc.heig-vd.ch/#ogc-api-
 
 - <<Catalog Services for the web (CSW)>>
 - <<Spatio Temporal Asset Catalog>>
+
 ==== Relation with eCH-0056
 
 The OGC API - Records standard is not mentioned in the eCH-0056 document.
